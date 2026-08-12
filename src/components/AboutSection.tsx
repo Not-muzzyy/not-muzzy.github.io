@@ -102,7 +102,7 @@ export default function AboutSection() {
             <ScrollReveal>
               <div className="timeline-container stagger-item">
                 <div className="timeline-item">
-                  <div className="timeline-dot" style={{ background: 'hsla(270, 70%, 60%, 1)' }}></div>
+                  <div className="timeline-dot" style={{ background: 'var(--brand-glow)' }}></div>
                   <div className="timeline-content">
                     <div className="timeline-year">2023 &mdash; 2026</div>
                     <div className="timeline-title">BCA Graduate</div>
@@ -110,7 +110,7 @@ export default function AboutSection() {
                   </div>
                 </div>
                 <div className="timeline-item">
-                  <div className="timeline-dot" style={{ background: 'hsla(150, 70%, 60%, 1)' }}></div>
+                  <div className="timeline-dot" style={{ background: 'var(--accent)' }}></div>
                   <div className="timeline-content">
                     <div className="timeline-year">Present</div>
                     <div className="timeline-title">Security & AI Developer</div>

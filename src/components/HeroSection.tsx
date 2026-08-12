@@ -94,40 +94,11 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="hero-focus-interactive animate-fade-up" style={{ animationDelay: '0.7s' }}>
-            <div className="focus-radar">
-              <div className="radar-sweep"></div>
-              <div className="radar-ring r1"></div>
-              <div className="radar-ring r2"></div>
-              <div className="radar-ring r3"></div>
-              <div className="radar-sweep"></div>
-              
-              <div className="radar-node n1">
-                <div className="node-dot"></div>
-                <div className="node-label">Threat Detection</div>
-              </div>
-              <div className="radar-node n2">
-                <div className="node-dot"></div>
-                <div className="node-label">AI Security</div>
-              </div>
-              <div className="radar-node n3">
-                <div className="node-dot"></div>
-                <div className="node-label">Automation</div>
-              </div>
-              <div className="radar-node n4">
-                <div className="node-dot"></div>
-                <div className="node-label">Machine Learning</div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
 
-      <div className="hero-scroll-indicator animate-fade-up" style={{ animationDelay: '1s' }}>
-        <div className="scroll-mouse">
-          <div className="scroll-wheel"></div>
-        </div>
-      </div>
+
     </section>
   );
 }

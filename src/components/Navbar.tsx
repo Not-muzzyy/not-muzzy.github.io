@@ -1,6 +1,10 @@
 'use client';
 
+import { useState } from 'react';
+
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar-container">
       <div className="nav-logo">
@@ -8,29 +12,41 @@ export default function Navbar() {
         <span className="logo-dot"></span>
         <span className="logo-text">C</span>
       </div>
-      <ul className="nav-links">
+
+      <button 
+        className={`mobile-menu-toggle ${isOpen ? 'open' : ''}`}
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle menu"
+        aria-expanded={isOpen}
+      >
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+      </button>
+
+      <ul className={`nav-links ${isOpen ? 'nav-open' : ''}`}>
         <li>
-          <a href="#about" style={{ '--nav-hue': '150' } as React.CSSProperties}>
+          <a href="#about" style={{ '--nav-hue': '150' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             About
           </a>
         </li>
         <li>
-          <a href="#skills" style={{ '--nav-hue': '270' } as React.CSSProperties}>
+          <a href="#skills" style={{ '--nav-hue': '270' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             Skills
           </a>
         </li>
         <li>
-          <a href="#projects" style={{ '--nav-hue': '210' } as React.CSSProperties}>
+          <a href="#projects" style={{ '--nav-hue': '210' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             Projects
           </a>
         </li>
         <li>
-          <a href="#certs" style={{ '--nav-hue': '45' } as React.CSSProperties}>
+          <a href="#certs" style={{ '--nav-hue': '45' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             Certs
           </a>
         </li>
         <li>
-          <a href="#contact" style={{ '--nav-hue': '0' } as React.CSSProperties}>
+          <a href="#contact" style={{ '--nav-hue': '0' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             Contact
           </a>
         </li>
