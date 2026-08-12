@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     title: 'Muzammil C | Portfolio',
     description: 'Cybersecurity and AI projects by Muzammil C',
     type: 'website',
+    images: ['/opengraph-image.png'],
+  },
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
   },
 };
 
