@@ -1,0 +1,29 @@
+# Mohammed Muzammil C
+
+> Cybersecurity Engineer & AI Systems Developer building intelligent security systems, SOC monitoring utilities, and production RAG pipelines.
+
+- **Website**: https://muzzyy.me
+- **GitHub**: https://github.com/not-muzzyy
+- **LinkedIn**: https://linkedin.com/in/muzzammilc7
+- **Email**: mohammedmuzammil643@gmail.com
+- **Resume**: https://muzzyy.me/resume.pdf
+- **Location**: Ballari, Karnataka, India (Available for On-site across India & Global Remote)
+
+## Core Technical Disciplines
+
+- **Cybersecurity & SOC**: SOC Analysis, Threat Intelligence, SIEM Fundamentals, Malware Analysis, Network Security, Ethical Hacking.
+- **AI & Machine Learning**: RAG (Retrieval-Augmented Generation), LangChain, FAISS, Scikit-learn, Pandas, SHAP Explainability, NLP.
+- **LLMs & Automation**: Groq API, Anthropic Claude, OpenAI GPT-4o, Streamlit, Flask, Docker, Linux/Bash.
+
+## Featured Production Projects
+
+1. **EduSathi**: Production-grade AI study companion using RAG, FAISS vector search, and LangChain with dual-portal RBAC for Indian university curriculum.
+2. **Mini-SIEM AI**: AI-powered Security Information and Event Management system with ML attack classification, automated risk scoring, SHAP explainability, and Groq incident report generation.
+3. **Phishing Detector ML**: 3-layer ML pipeline achieving 97% accuracy across English, Hindi, and Hinglish URLs, extracting 20+ URL features.
+4. **Virtual Pollution Intel Grid**: Interactive geospatial monitoring dashboard with 7-day AI risk forecasting, built at Chakravyuha 3.0 Hackathon.
+
+## Completed Certifications
+
+- Google Cloud Cybersecurity (2024)
+- Hugging Face AI Agents Fundamentals (2025)
+- Anthropic AI Fluency, Claude 101, Claude Code (2025)

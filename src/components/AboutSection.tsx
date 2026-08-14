@@ -73,6 +73,12 @@ export default function AboutSection() {
                 continuously push my boundaries through hackathons, emerging
                 technologies, and products that solve meaningful problems.
               </p>
+              <p className="stagger-item">
+                Based in <strong>Ballari, Karnataka, India</strong> — open to{' '}
+                <strong>SOC Analyst</strong>, <strong>Threat Intelligence</strong>, and{' '}
+                <strong>Applied ML</strong> roles with flexibility for on-site positions
+                in Bengaluru, Hyderabad, and remote opportunities globally.
+              </p>
             </div>
 
             <div className="core-values stagger-item">

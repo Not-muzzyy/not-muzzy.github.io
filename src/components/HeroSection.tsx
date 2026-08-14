@@ -44,6 +44,7 @@ export default function HeroSection() {
         </div>
 
         <h1 className="hero-name animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <span className="sr-only">Mohammed </span>
           <span className="glitch-name" data-text="Muzammil">Muzammil</span><br />
           <span className="glitch-name" data-text="C">C</span>
         </h1>
@@ -53,6 +54,9 @@ export default function HeroSection() {
             <p className="hero-tagline animate-fade-up" style={{ animationDelay: '0.3s' }}>
               Building intelligent security systems through <strong className="glow-text">AI</strong>,<br className="hide-mobile" />
               <strong className="glow-text">automation</strong> and modern software.
+            </p>
+            <p className="hero-subtitle animate-fade-up" style={{ animationDelay: '0.35s' }}>
+              Specializing in SOC Operations, ML-Driven Threat Detection, and Agentic RAG Systems.
             </p>
 
             <div className="hero-roles-tokens animate-fade-up" style={{ animationDelay: '0.4s' }}>
