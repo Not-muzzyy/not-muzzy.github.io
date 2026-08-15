@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import MagneticButton from './MagneticButton';
+import Navbar from './Navbar';
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLElement>(null);
@@ -30,6 +31,7 @@ export default function HeroSection() {
 
   return (
     <section ref={heroRef} id="hero" className="hero-container">
+      <Navbar />
       {/* Dynamic Background Glow */}
       <div 
         className="hero-ambient-glow" 

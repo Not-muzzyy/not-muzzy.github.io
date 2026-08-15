@@ -2399,3 +2399,202 @@ button:active,
     padding-left: 0; margin-left: 0; background: transparent;
   }
 }
+
+
+/* ── COMPARISON TABLE ── */
+.comparison-container {
+  margin-top: 48px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.comparison-table th {
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.comparison-table th[scope="row"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.comparison-table thead th {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.comparison-table tbody tr:last-child th,
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table .highlight-col {
+  color: var(--accent);
+  background: var(--accent-subtle);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.comparison-table thead .highlight-col {
+  color: var(--brand-glow);
+}
+
+/* ── FAQ SECTION ── */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+  max-width: 800px;
+}
+
+.faq-item {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: all 0.4s var(--ease);
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  border-color: var(--border-hover);
+  background: var(--surface-3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+  transition: color 0.4s var(--ease);
+}
+
+.faq-item:hover .faq-question {
+  color: var(--brand-glow);
+}
+
+.faq-answer {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ── CODE DEMO BLOCK ── */
+.code-demo {
+  margin-top: 48px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.code-filename {
+  color: var(--brand-glow);
+}
+
+.code-lang {
+  color: var(--text-dim);
+}
+
+.code-body {
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.code-body pre {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #a8b2d1;
+  line-height: 1.6;
+}
+
+/* ── QUOTE BLOCK ── */
+.thesis-quote {
+  margin-top: 48px;
+  padding-left: 24px;
+  border-left: 3px solid var(--brand-glow);
+}
+
+.thesis-quote p {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.thesis-quote footer {
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+
+/* Mobile Sticky CTA */
+.mobile-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background: rgba(10, 10, 12, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.mobile-sticky-cta:active {
+  transform: translateX(-50%) scale(0.95);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .mobile-sticky-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

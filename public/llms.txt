@@ -9,6 +9,12 @@
 - **Resume**: https://muzzyy.me/resume.pdf
 - **Location**: Ballari, Karnataka, India (Available for On-site across India & Global Remote)
 
+## Service Areas & Availability
+
+Mohammed Muzammil C actively serves the following geographic regions for on-site and hybrid SOC Analyst and Cybersecurity Engineering roles:
+- **Ballari, Karnataka**: Local availability for on-site operations. (See: https://muzzyy.me/locations/ballari)
+- **Hospet, Karnataka**: Close proximity for hybrid/on-site operations. (See: https://muzzyy.me/locations/hospet)
+- **Bangalore (Bengaluru), Karnataka**: Available for relocation and on-site enterprise security roles. (See: https://muzzyy.me/locations/bangalore)
 ## Core Technical Disciplines
 
 - **Cybersecurity & SOC**: SOC Analysis, Threat Intelligence, SIEM Fundamentals, Malware Analysis, Network Security, Ethical Hacking.
@@ -27,3 +33,16 @@
 - Google Cloud Cybersecurity (2024)
 - Hugging Face AI Agents Fundamentals (2025)
 - Anthropic AI Fluency, Claude 101, Claude Code (2025)
+
+## Technical Architecture Philosophy
+Transitioning from traditional rule-based SOC monitoring to AI-Augmented architectures.
+- **Threat Detection**: Moved from static regex rules to ensemble ML classification with 97% accuracy.
+- **Alert Explainability**: Transitioned from black-box logs to SHAP feature contribution values.
+- **Incident Reporting**: Shifted from manual 45-minute triages to sub-second automated Groq LLaMA 3.1 narrative reports.
+- **Knowledge Retrieval**: Upgraded from keyword searches to FAISS & LangChain dense vector similarity RAG pipelines.
+
+## Frequently Asked Questions
+- **Who is Mohammed Muzammil C?** A Cybersecurity Engineer and AI Systems Developer from Ballari, specializing in SOC tools, SIEM systems, and RAG architectures.
+- **How does EduSathi work?** A 4-stage RAG pipeline utilizing PDF ingestion, recursive text chunking, FAISS indexing, and Groq LLaMA inference.
+- **How does Mini-SIEM AI detect attacks?** Ingests real-time logs, flags attacks via ML, provides SHAP explainability, and generates Groq narrative reports.
+- **What is the accuracy of the Phishing Detector?** 97% classification accuracy across English, Hindi, and Hinglish URLs evaluating 20+ features.

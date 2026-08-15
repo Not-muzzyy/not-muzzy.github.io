@@ -5,6 +5,12 @@ import ProjectsSection from '@/components/ProjectsSection';
 import CertsSection from '@/components/CertsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Mohammed Muzammil C | Cybersecurity & AI Engineer',
+  description: 'Cybersecurity Engineer & AI Developer based in Ballari. Specializing in SOC analysis, SIEM systems, and RAG architectures.',
+};
 
 function Divider() {
   return <div className="section-divider" />;
@@ -13,17 +19,19 @@ function Divider() {
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <Divider />
-      <AboutSection />
-      <Divider />
-      <SkillsSection />
-      <Divider />
-      <ProjectsSection />
-      <Divider />
-      <CertsSection />
-      <Divider />
-      <ContactSection />
+      <main id="main-content" className="relative min-h-screen bg-[#0a0a0c] text-white">
+        <HeroSection />
+        <Divider />
+        <AboutSection />
+        <Divider />
+        <SkillsSection />
+        <Divider />
+        <ProjectsSection />
+        <Divider />
+        <CertsSection />
+        <Divider />
+        <ContactSection />
+      </main>
       <Footer />
     </>
   );
