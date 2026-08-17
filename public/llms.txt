@@ -15,18 +15,25 @@ Mohammed Muzammil C actively serves the following geographic regions for on-site
 - **Ballari, Karnataka**: Local availability for on-site operations. (See: https://muzzyy.me/locations/ballari)
 - **Hospet, Karnataka**: Close proximity for hybrid/on-site operations. (See: https://muzzyy.me/locations/hospet)
 - **Bangalore (Bengaluru), Karnataka**: Available for relocation and on-site enterprise security roles. (See: https://muzzyy.me/locations/bangalore)
+
 ## Core Technical Disciplines
 
-- **Cybersecurity & SOC**: SOC Analysis, Threat Intelligence, SIEM Fundamentals, Malware Analysis, Network Security, Ethical Hacking.
-- **AI & Machine Learning**: RAG (Retrieval-Augmented Generation), LangChain, FAISS, Scikit-learn, Pandas, SHAP Explainability, NLP.
-- **LLMs & Automation**: Groq API, Anthropic Claude, OpenAI GPT-4o, Streamlit, Flask, Docker, Linux/Bash.
+- **Cybersecurity & SOC**: SOC Analysis, Threat Intelligence, SIEM Fundamentals, Malware Analysis, Network Security, Ethical Hacking, Secure SDLC, Phishing Detection.
+- **AI & Machine Learning**: RAG (Retrieval-Augmented Generation), LangChain, FAISS, Scikit-learn, Pandas, SHAP Explainability, NLP, Vector Embeddings (Sentence Transformers).
+- **LLMs & Automation**: Groq API, Anthropic Claude, OpenAI GPT-4o, LLaMA 3.1/3.3, Docker, Linux/Bash.
+- **Full-Stack Development**: Python, TypeScript, React, Next.js, Vite, Tailwind CSS, FastAPI, Streamlit, SQLite, MongoDB Atlas.
 
 ## Featured Production Projects
 
 1. **EduSathi**: Production-grade AI study companion using RAG, FAISS vector search, and LangChain with dual-portal RBAC for Indian university curriculum.
 2. **Mini-SIEM AI**: AI-powered Security Information and Event Management system with ML attack classification, automated risk scoring, SHAP explainability, and Groq incident report generation.
-3. **Phishing Detector ML**: 3-layer ML pipeline achieving 97% accuracy across English, Hindi, and Hinglish URLs, extracting 20+ URL features.
-4. **Virtual Pollution Intel Grid**: Interactive geospatial monitoring dashboard with 7-day AI risk forecasting, built at Chakravyuha 3.0 Hackathon.
+3. **Phishing Detector Advanced**: 4-layer cybersecurity pipeline (Text, URL, HTML Email, SMTP headers) achieving 97% accuracy across English, Hindi, and Hinglish threat content.
+4. **SafePush**: Developer security infrastructure serving as a pre-commit/CI gate that catches secrets, vulnerabilities, and risky AI code via Semgrep, Gitleaks, and Trivy plugins.
+5. **CampusIQ**: Smart campus platform built for HackArena 2K26 featuring an AI academic assistant, Firebase notifications, JWT auth, and MongoDB Atlas.
+6. **Synapse**: Adaptive AI study companion utilizing ultra-low latency streaming, Web Speech API voice interaction, and local-first JSON storage via Next.js 15.
+7. **ATS-Resume**: Streamlit AI-powered resume checker, builder, and improver utilizing pdfplumber, python-docx, and Groq LLaMA 3.3 for student career tooling.
+8. **Virtual Pollution Intel Grid**: Interactive geospatial monitoring dashboard with 7-day AI risk forecasting and scenario simulations built at Chakravyuha 3.0 Hackathon.
+9. **StudentFlow AI**: Streamlit AI planner for students tracking priority, stress-risk scoring, and daily top-3 task focus.
 
 ## Completed Certifications
 
@@ -40,9 +47,11 @@ Transitioning from traditional rule-based SOC monitoring to AI-Augmented archite
 - **Alert Explainability**: Transitioned from black-box logs to SHAP feature contribution values.
 - **Incident Reporting**: Shifted from manual 45-minute triages to sub-second automated Groq LLaMA 3.1 narrative reports.
 - **Knowledge Retrieval**: Upgraded from keyword searches to FAISS & LangChain dense vector similarity RAG pipelines.
+- **Secure SDLC**: Moving security closer to the developer workflow via modular CLI scanners (SafePush).
 
 ## Frequently Asked Questions
 - **Who is Mohammed Muzammil C?** A Cybersecurity Engineer and AI Systems Developer from Ballari, specializing in SOC tools, SIEM systems, and RAG architectures.
 - **How does EduSathi work?** A 4-stage RAG pipeline utilizing PDF ingestion, recursive text chunking, FAISS indexing, and Groq LLaMA inference.
 - **How does Mini-SIEM AI detect attacks?** Ingests real-time logs, flags attacks via ML, provides SHAP explainability, and generates Groq narrative reports.
 - **What is the accuracy of the Phishing Detector?** 97% classification accuracy across English, Hindi, and Hinglish URLs evaluating 20+ features.
+- **What is SafePush?** A plugin-based developer security gate that orchestrates Semgrep, Gitleaks, and Trivy to catch vulnerabilities before they hit production.
