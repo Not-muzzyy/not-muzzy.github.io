@@ -74,11 +74,22 @@ export default function AboutSection() {
                 technologies, and products that solve meaningful problems.
               </p>
               <p className="stagger-item">
-                Based in <strong>Ballari, Karnataka, India</strong> — open to{' '}
-                <strong>SOC Analyst</strong>, <strong>Threat Intelligence</strong>, and{' '}
-                <strong>Applied ML</strong> roles with flexibility for on-site positions
-                in Bengaluru, Hyderabad, and remote opportunities globally.
+                I&apos;m Mohammed Muzammil C, a BCA graduate based in Ballari, Karnataka, India. I specialize in building intelligence-driven security systems, SOC monitoring utilities, and robust AI platforms using cutting-edge RAG pipelines.
               </p>
+            </div>
+
+            <div className="pt-4 flex flex-wrap gap-4">
+              <a 
+                href="/resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group relative px-6 py-3 border border-white/10 overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-[var(--brand-glow)] opacity-0 group-hover:opacity-10 transition-opacity duration-500 blur-md" />
+                <span className="relative font-medium text-[var(--text)] text-sm tracking-wide group-hover:text-white transition-colors duration-300">
+                  VIEW RESUME
+                </span>
+              </a>
             </div>
 
             <div className="core-values stagger-item">

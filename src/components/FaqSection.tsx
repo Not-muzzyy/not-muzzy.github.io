@@ -14,7 +14,7 @@ export default function FaqSection() {
               Who is Mohammed Muzammil C?
             </dt>
             <dd className="faq-answer">
-              Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer from Ballari, Karnataka, India. A BCA graduate from NIMS Bellary, he specializes in building SOC threat monitoring tools, SIEM systems, and RAG architectures.
+              Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer from Ballari, Karnataka, India. A BCA graduate from NIMS Ballari, he specializes in building SOC threat monitoring tools, SIEM systems, and RAG architectures.
             </dd>
           </div>
 
