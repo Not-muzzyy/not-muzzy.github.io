@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState, useEffect, ReactNode } from 'react';
+import Link from 'next/link';
 
 interface MagneticButtonProps {
   children: ReactNode;
@@ -49,18 +50,32 @@ export default function MagneticButton({ children, className = '', href, onClick
   };
 
   if (href) {
+    if (href.startsWith('http') || download) {
+      return (
+        <a
+          ref={buttonRef}
+          href={href}
+          className={className}
+          style={combinedStyle}
+          download={download}
+          target={target}
+          rel={rel}
+        >
+          {children}
+        </a>
+      );
+    }
+    
     return (
-      <a
-        ref={buttonRef}
+      <Link
         href={href}
         className={className}
         style={combinedStyle}
-        download={download}
         target={target}
         rel={rel}
       >
         {children}
-      </a>
+      </Link>
     );
   }
 

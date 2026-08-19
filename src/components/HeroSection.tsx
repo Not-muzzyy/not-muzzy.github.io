@@ -46,9 +46,11 @@ export default function HeroSection() {
         </div>
 
         <h1 className="hero-name animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          <span className="sr-only">Mohammed </span>
-          <span className="glitch-name" data-text="Muzammil">Muzammil</span><br />
-          <span className="glitch-name" data-text="C">C</span>
+          <span className="sr-only">Mohammed Muzammil C — Cybersecurity & AI Systems Engineer</span>
+          <span aria-hidden="true">
+            <span className="glitch-name" data-text="Muzammil">Muzammil</span><br />
+            <span className="glitch-name" data-text="C">C</span>
+          </span>
         </h1>
         
         <div className="hero-middle-section">

@@ -12,6 +12,7 @@ interface Cert {
   status: string;
   statusPending?: boolean;
   hue: string; // Specific color hue for the minimal styling
+  link?: string;
 }
 
 const certs: Cert[] = [
@@ -22,6 +23,7 @@ const certs: Cert[] = [
     sub: 'Security fundamentals, threat analysis, cloud defense',
     status: 'COMPLETED',
     hue: '210', // Google Blue
+    link: '#',
   },
   {
     icon: 'fa-solid fa-robot',
@@ -30,6 +32,7 @@ const certs: Cert[] = [
     sub: 'HuggingFace - Building and deploying autonomous AI agents',
     status: 'COMPLETED',
     hue: '45', // Yellow/Gold
+    link: '#',
   },
   {
     icon: 'fa-solid fa-brain',
@@ -38,6 +41,7 @@ const certs: Cert[] = [
     sub: 'AI literacy, Claude API, agentic coding workflows',
     status: 'COMPLETED',
     hue: '20', // Peach/Orange
+    link: '#',
   },
   {
     icon: 'fa-solid fa-shield-halved',
@@ -115,7 +119,14 @@ function CertCard({ c }: { c: Cert }) {
         </div>
         <div className="cert-details">
           <div className="cert-date">{c.date}</div>
-          <div className="cert-title">{c.title}</div>
+          <div className="cert-title flex items-center gap-2">
+            {c.title}
+            {c.link && (
+              <a href={c.link} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors" title="Verify Credential" onClick={(e) => e.stopPropagation()}>
+                <i className="fa-solid fa-arrow-up-right-from-square text-xs" />
+              </a>
+            )}
+          </div>
           <div className="cert-sub">{c.sub}</div>
           <span
             className={`cert-badge-tag${c.statusPending ? ' pending' : ''}`}

@@ -13,65 +13,54 @@ export default function EduSathiPage() {
     <>
       <main className="min-h-screen flex flex-col pt-24 pb-12">
         <Navbar />
-        <section className="flex-grow px-6 max-w-3xl mx-auto w-full py-12">
-          <div className="mb-12">
-            <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-dim)', fontWeight: 600, display: 'block', marginBottom: '8px' }}>
-              Project Case Study
-            </span>
-            <h1 style={{ fontSize: '2.5rem', fontWeight: 500, color: 'var(--text)', letterSpacing: '-0.02em', lineHeight: 1.2 }}>
-              EduSathi
-            </h1>
-            <p style={{ marginTop: '8px', color: 'var(--text-muted)' }}>
-              Production-grade AI study companion utilizing RAG, FAISS, LangChain, and Groq API with dual-portal RBAC for university curricula.
-            </p>
-          </div>
+        <section className="flex-grow">
+          <div className="section-label">Case Study</div>
+          <h1 className="section-title" style={{ marginBottom: '24px' }}>EduSathi</h1>
+          <p className="hero-tagline" style={{ marginBottom: '64px' }}>
+            Production-grade AI study companion utilizing RAG, FAISS, LangChain, and Groq API with dual-portal RBAC for university curricula.
+          </p>
 
-          <div style={{ color: 'var(--text-muted)', lineHeight: 1.8 }} className="space-y-8">
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>What is EduSathi?</h2>
-              <p>
-                EduSathi is an AI-powered study assistant designed specifically for university students, leveraging a 4-stage Retrieval-Augmented Generation (RAG) pipeline to deliver precise, curriculum-aligned answers.
-              </p>
-            </div>
+          <div className="about-grid">
+             <div className="about-text-column">
+                <h2 className="glow-text" style={{ fontSize: '1.5rem', marginBottom: '16px' }}>What is EduSathi?</h2>
+                <div className="about-text">
+                  <p>EduSathi is an AI-powered study assistant designed specifically for university students, leveraging a 4-stage Retrieval-Augmented Generation (RAG) pipeline to deliver precise, curriculum-aligned answers.</p>
+                </div>
 
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Problem</h2>
-              <p>
-                Students often struggle to find specific, reliable answers within hundreds of pages of university-provided PDF materials. Traditional keyword searches are inefficient, and generic LLMs hallucinate or provide out-of-syllabus answers.
-              </p>
-            </div>
-
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Architecture</h2>
-              <ul className="list-disc pl-5 space-y-2">
-                <li><strong>Ingestion:</strong> High-speed PDF parsing of university materials.</li>
-                <li><strong>Chunking:</strong> Recursive text chunking to maintain contextual boundaries.</li>
-                <li><strong>Indexing:</strong> FAISS dense vector similarity search for rapid retrieval.</li>
-                <li><strong>Inference:</strong> Groq LLaMA models configured to answer strictly based on retrieved context.</li>
-                <li><strong>Access Control:</strong> Dual-portal Role-Based Access Control (RBAC) for admins and students.</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Technology Stack</h2>
-              <p>
-                Python, LangChain, FAISS, Groq API (LLaMA 3.1), Streamlit, PyPDF2.
-              </p>
-            </div>
-
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Repository & Links</h2>
-              <p>
-                <a href="https://github.com/not-muzzyy/EduSathi-Production-Grade-RAG-Based-AI-Study-Companion" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--brand-glow)', textDecoration: 'none' }}>View Source Code on GitHub</a>
-              </p>
-            </div>
-
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Author</h2>
-              <p>
-                Mohammed Muzammil C
-              </p>
-            </div>
+                <h2 className="glow-text" style={{ fontSize: '1.5rem', marginBottom: '16px', marginTop: '32px' }}>Problem</h2>
+                <div className="about-text">
+                  <p>Students often struggle to find specific, reliable answers within hundreds of pages of university-provided PDF materials. Traditional keyword searches are inefficient, and generic LLMs hallucinate or provide out-of-syllabus answers.</p>
+                </div>
+             </div>
+             
+             <div className="about-visuals-column">
+                <div className="stat-card" style={{ padding: '32px' }}>
+                  <div className="stat-value" style={{ fontSize: '1.25rem', marginBottom: '16px' }}>Architecture</div>
+                  <div className="core-values" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '12px' }}>
+                    <div className="value-item" style={{ width: '100%', justifyContent: 'flex-start' }}><span className="value-icon">→</span>Ingestion: High-speed PDF parsing</div>
+                    <div className="value-item" style={{ width: '100%', justifyContent: 'flex-start' }}><span className="value-icon">→</span>Chunking: Recursive text boundaries</div>
+                    <div className="value-item" style={{ width: '100%', justifyContent: 'flex-start' }}><span className="value-icon">→</span>Indexing: FAISS dense vector search</div>
+                    <div className="value-item" style={{ width: '100%', justifyContent: 'flex-start' }}><span className="value-icon">→</span>Inference: Groq LLaMA models</div>
+                  </div>
+                </div>
+                
+                <div className="stat-card" style={{ padding: '32px' }}>
+                   <div className="stat-value" style={{ fontSize: '1.25rem' }}>Tech Stack</div>
+                   <div className="hero-roles-tokens" style={{ marginTop: '16px' }}>
+                     <span className="role-token">Python</span>
+                     <span className="role-token">LangChain</span>
+                     <span className="role-token">FAISS</span>
+                     <span className="role-token">Groq API</span>
+                     <span className="role-token">Streamlit</span>
+                   </div>
+                </div>
+                
+                <a href="https://github.com/Not-muzzyy/edusathi" target="_blank" rel="noopener noreferrer" className="interactive-btn btn-primary" style={{ marginTop: '16px', width: 'fit-content' }}>
+                  <span className="btn-text">View Source Code</span>
+                  <span className="link-arrow">→</span>
+                  <div className="btn-glow" aria-hidden="true"></div>
+                </a>
+             </div>
           </div>
         </section>
         <Footer />

@@ -2,16 +2,18 @@
 
 import { useState } from 'react';
 
+import Link from 'next/link';
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar-container">
-      <div className="nav-logo">
+      <Link href="/" className="nav-logo" style={{ textDecoration: 'none' }}>
         <span className="logo-text">Muzammil</span>
         <span className="logo-dot"></span>
         <span className="logo-text">C</span>
-      </div>
+      </Link>
 
       <button 
         className={`mobile-menu-toggle ${isOpen ? 'open' : ''}`}
@@ -26,29 +28,29 @@ export default function Navbar() {
 
       <ul className={`nav-links ${isOpen ? 'nav-open' : ''}`}>
         <li>
-          <a href="#about" style={{ '--nav-hue': '150' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
+          <Link href="/#about" style={{ '--nav-hue': '150' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#skills" style={{ '--nav-hue': '270' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
+          <Link href="/#skills" style={{ '--nav-hue': '270' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             Skills
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#projects" style={{ '--nav-hue': '210' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
+          <Link href="/#projects" style={{ '--nav-hue': '210' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#certs" style={{ '--nav-hue': '45' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
+          <Link href="/#certs" style={{ '--nav-hue': '45' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             Certs
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#contact" style={{ '--nav-hue': '0' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
+          <Link href="/#contact" style={{ '--nav-hue': '0' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="nav-border-glow" />

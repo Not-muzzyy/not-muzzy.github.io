@@ -14,6 +14,10 @@ const jsonLdData = {
   "@type": "ProfilePage",
   "@id": "https://muzzyy.me/#profile",
   "url": "https://muzzyy.me/",
+  "name": "Mohammed Muzammil C | Cybersecurity & AI Engineer",
+  "isPartOf": {
+    "@id": "https://muzzyy.me/#website"
+  },
   "mainEntity": {
     "@id": "https://muzzyy.me/#person"
   }

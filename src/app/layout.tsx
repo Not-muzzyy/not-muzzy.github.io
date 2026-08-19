@@ -12,7 +12,7 @@ maximumScale: 5,
 export const metadata: Metadata = { 
 metadataBase: new URL("https://muzzyy.me"), 
 title: { 
-default: "Mohammed Muzammil C | Cybersecurity & AI Engineer", 
+default: "Mohammed Muzammil C | Cybersecurity & AI Engineer in Ballari", 
 template: "%s | Mohammed Muzammil C", 
 }, 
 description: 
@@ -51,7 +51,7 @@ username: "not-muzzyy",
 gender: "male", 
 locale: "en_US", 
 url: "https://muzzyy.me", 
-title: "Mohammed Muzammil C | Cybersecurity & AI Engineer", 
+title: "Mohammed Muzammil C | Cybersecurity & AI Engineer in Ballari", 
 description: 
 "Building intelligent security systems and production RAG pipelines in Ballari, Karnataka. Explore EduSathi, Mini-SIEM AI, and Phishing Detector.", 
 siteName: "Muzammil C | Portfolio", 

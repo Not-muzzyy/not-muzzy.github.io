@@ -13,65 +13,56 @@ export default function MiniSiemPage() {
     <>
       <main className="min-h-screen flex flex-col pt-24 pb-12">
         <Navbar />
-        <section className="flex-grow px-6 max-w-3xl mx-auto w-full py-12">
-          <div className="mb-12">
-            <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-dim)', fontWeight: 600, display: 'block', marginBottom: '8px' }}>
-              Project Case Study
-            </span>
-            <h1 style={{ fontSize: '2.5rem', fontWeight: 500, color: 'var(--text)', letterSpacing: '-0.02em', lineHeight: 1.2 }}>
-              Mini-SIEM AI
-            </h1>
-            <p style={{ marginTop: '8px', color: 'var(--text-muted)' }}>
-              AI-powered Security Information and Event Management system with ML attack classification, automated risk scoring, and SHAP explainability.
-            </p>
-          </div>
+        <section className="flex-grow">
+          <div className="section-label">Case Study</div>
+          <h1 className="section-title" style={{ marginBottom: '24px' }}>Mini-SIEM AI</h1>
+          <p className="hero-tagline" style={{ marginBottom: '64px' }}>
+            AI-powered Security Information and Event Management system with ML attack classification, automated risk scoring, and SHAP explainability.
+          </p>
 
-          <div style={{ color: 'var(--text-muted)', lineHeight: 1.8 }} className="space-y-8">
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>What is Mini-SIEM AI?</h2>
-              <p>
-                Mini-SIEM AI is a lightweight, intelligent Security Information and Event Management (SIEM) tool designed to monitor logs, classify cyber attacks using Machine Learning, and automatically generate narrative incident reports using LLMs.
-              </p>
-            </div>
+          <div className="about-grid">
+             <div className="about-text-column">
+                <h2 className="glow-text" style={{ fontSize: '1.5rem', marginBottom: '16px' }}>What is Mini-SIEM AI?</h2>
+                <div className="about-text">
+                  <p>Mini-SIEM AI is a lightweight, intelligent Security Information and Event Management (SIEM) tool designed to monitor logs, classify cyber attacks using Machine Learning, and automatically generate narrative incident reports using LLMs.</p>
+                </div>
 
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Problem</h2>
-              <p>
-                Traditional SOC analysts spend roughly 45 minutes manually triaging a single complex alert. Legacy SIEMs rely on static regex rules that generate high false-positive rates and offer "black-box" alerts with little explanation.
-              </p>
-            </div>
-
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Solution & Architecture</h2>
-              <ul className="list-disc pl-5 space-y-2">
-                <li><strong>Log Ingestion:</strong> Real-time streaming and parsing of network/system logs.</li>
-                <li><strong>ML Classifier:</strong> Ensemble model replacing static regex to classify attack vectors dynamically.</li>
-                <li><strong>Risk Scoring:</strong> Automated severity assessment based on anomaly thresholds.</li>
-                <li><strong>SHAP Explainability:</strong> Calculates feature contribution values to mathematically prove <em>why</em> an alert was triggered.</li>
-                <li><strong>Incident Reporting:</strong> Groq LLaMA 3.1 synthesizes the technical data into sub-second, human-readable narrative reports for analysts.</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Technology Stack</h2>
-              <p>
-                Python, Streamlit, Scikit-learn, SHAP, Pandas, Groq API (LLaMA).
-              </p>
-            </div>
-
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Repository & Links</h2>
-              <p>
-                <a href="https://github.com/not-muzzyy/mini-siem-ai" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--brand-glow)', textDecoration: 'none' }}>View Source Code on GitHub</a>
-              </p>
-            </div>
-
-            <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>Author</h2>
-              <p>
-                Mohammed Muzammil C
-              </p>
-            </div>
+                <h2 className="glow-text" style={{ fontSize: '1.5rem', marginBottom: '16px', marginTop: '32px' }}>Problem</h2>
+                <div className="about-text">
+                  <p>Traditional SOC analysts spend roughly 45 minutes manually triaging a single complex alert. Legacy SIEMs rely on static regex rules that generate high false-positive rates and offer &quot;black-box&quot; alerts with little explanation.</p>
+                </div>
+             </div>
+             
+             <div className="about-visuals-column">
+                <div className="stat-card" style={{ padding: '32px' }}>
+                  <div className="stat-value" style={{ fontSize: '1.25rem', marginBottom: '16px' }}>Architecture & Solution</div>
+                  <div className="core-values" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '12px' }}>
+                    <div className="value-item" style={{ width: '100%', justifyContent: 'flex-start' }}><span className="value-icon">→</span>Ingestion: Real-time network logs</div>
+                    <div className="value-item" style={{ width: '100%', justifyContent: 'flex-start' }}><span className="value-icon">→</span>ML Classifier: Ensemble attack classification</div>
+                    <div className="value-item" style={{ width: '100%', justifyContent: 'flex-start' }}><span className="value-icon">→</span>Risk Scoring: Automated severity assessment</div>
+                    <div className="value-item" style={{ width: '100%', justifyContent: 'flex-start' }}><span className="value-icon">→</span>Explainability: SHAP feature contribution</div>
+                    <div className="value-item" style={{ width: '100%', justifyContent: 'flex-start' }}><span className="value-icon">→</span>Reporting: Groq LLM sub-second narratives</div>
+                  </div>
+                </div>
+                
+                <div className="stat-card" style={{ padding: '32px' }}>
+                   <div className="stat-value" style={{ fontSize: '1.25rem' }}>Tech Stack</div>
+                   <div className="hero-roles-tokens" style={{ marginTop: '16px' }}>
+                     <span className="role-token">Python</span>
+                     <span className="role-token">Streamlit</span>
+                     <span className="role-token">Scikit-learn</span>
+                     <span className="role-token">SHAP</span>
+                     <span className="role-token">Pandas</span>
+                     <span className="role-token">Groq API</span>
+                   </div>
+                </div>
+                
+                <a href="https://github.com/Not-muzzyy/mini-siem-ai" target="_blank" rel="noopener noreferrer" className="interactive-btn btn-primary" style={{ marginTop: '16px', width: 'fit-content' }}>
+                  <span className="btn-text">View Source Code</span>
+                  <span className="link-arrow">→</span>
+                  <div className="btn-glow" aria-hidden="true"></div>
+                </a>
+             </div>
           </div>
         </section>
         <Footer />

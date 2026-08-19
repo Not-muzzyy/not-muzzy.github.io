@@ -12,27 +12,97 @@ export default function FaqPage() {
   const faqs = [
     {
       question: "Who is Mohammed Muzammil C?",
-      answer: "Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer from Ballari, Karnataka, India. A BCA graduate from NIMS Ballari, he specializes in building SOC threat monitoring tools, SIEM systems, and RAG architectures."
+      answer: (
+        <>
+          <p>
+            Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer from Ballari, Karnataka, India. A BCA graduate from NIMS Ballari, he specializes in building SOC threat monitoring tools, ML-driven SIEM systems, and advanced Retrieval-Augmented Generation (RAG) architectures.
+          </p>
+          <ul className="list-disc pl-5 mt-4 space-y-1 text-sm">
+            <li><strong>Location:</strong> Ballari, Karnataka, India</li>
+            <li><strong>Core Focus:</strong> Cybersecurity, SOC Operations, Artificial Intelligence</li>
+            <li><strong>Education:</strong> BCA, Nandi Institute of Management and Science</li>
+          </ul>
+        </>
+      )
     },
     {
       question: "What is EduSathi and how does its RAG pipeline work?",
-      answer: "EduSathi is an AI study assistant utilizing a 4-stage RAG pipeline: PDF ingestion, recursive text chunking, FAISS vector indexing, and Groq LLaMA inference with dual-portal RBAC."
+      answer: (
+        <>
+          <p>
+            EduSathi is an AI-powered academic companion that processes university curriculum documents through a 4-stage Retrieval-Augmented Generation (RAG) pipeline. It parses PDFs with recursive character text chunking, builds dense semantic embeddings indexed in FAISS, and executes sub-second query synthesis using Groq LLaMA models.
+          </p>
+          <ul className="list-disc pl-5 mt-4 space-y-1 text-sm">
+            <li><strong>Vector Store:</strong> FAISS (Facebook AI Similarity Search)</li>
+            <li><strong>Orchestration:</strong> LangChain RAG pipeline</li>
+            <li><strong>Inference Engine:</strong> Groq API (LLaMA 3.1)</li>
+            <li><strong>Access Control:</strong> Dual-portal RBAC (Student & Administrator)</li>
+          </ul>
+        </>
+      )
     },
     {
       question: "How does Mini-SIEM AI detect cybersecurity attacks?",
-      answer: "Mini-SIEM AI ingests real-time logs, uses machine learning classification to flag attack types, provides SHAP explainability for alert transparency, and generates Groq narrative incident reports."
+      answer: (
+        <>
+          <p>
+            Mini-SIEM AI ingests real-time logs and uses an ensemble machine learning classification system to dynamically flag attack vectors, replacing traditional static regex rules. It provides mathematically proven SHAP explainability for alert transparency and generates sub-second narrative incident reports using Groq LLaMA models.
+          </p>
+          <ul className="list-disc pl-5 mt-4 space-y-1 text-sm">
+            <li><strong>Log Analysis:</strong> Streamlit & Pandas</li>
+            <li><strong>ML Classifier:</strong> Scikit-learn (Ensemble Methods)</li>
+            <li><strong>Explainability:</strong> SHAP (SHapley Additive exPlanations)</li>
+            <li><strong>Reporting:</strong> Groq API LLaMA 3.1</li>
+          </ul>
+        </>
+      )
     },
     {
       question: "What is the accuracy of the Phishing URL Detector?",
-      answer: "The Phishing URL Detector achieves 97% classification accuracy across English, Hindi, and Hinglish URLs by evaluating 20+ structural and domain-age features."
+      answer: (
+        <>
+          <p>
+            The Phishing URL Detector achieves 97% classification accuracy across English, Hindi, and Hinglish URLs by evaluating over 20 structural, domain-age, and lexical features. These metrics represent performance on the project&apos;s evaluated test dataset using optimized Scikit-learn algorithms.
+          </p>
+          <ul className="list-disc pl-5 mt-4 space-y-1 text-sm">
+            <li><strong>Accuracy:</strong> 97%</li>
+            <li><strong>Precision:</strong> 96%</li>
+            <li><strong>Recall:</strong> 97%</li>
+            <li><strong>F1-Score:</strong> 97%</li>
+          </ul>
+        </>
+      )
     },
     {
       question: "Is Mohammed Muzammil C available for SOC Analyst roles in Bengaluru, Hyderabad, or remote?",
-      answer: "Yes, Mohammed Muzammil C is actively available for SOC Analyst and Applied AI engineering roles with on-site availability in Bengaluru, Hyderabad, Ballari, and remote globally."
+      answer: (
+        <>
+          <p>
+            Yes, Mohammed Muzammil C is actively available for SOC Analyst, Threat Intelligence, and Applied AI engineering roles. He offers immediate on-site availability in Ballari, Bengaluru, and Hyderabad, as well as full flexibility for remote positions globally.
+          </p>
+          <ul className="list-disc pl-5 mt-4 space-y-1 text-sm">
+            <li><strong>Primary Hub:</strong> Bengaluru (Bangalore), Karnataka</li>
+            <li><strong>Secondary Hubs:</strong> Hyderabad, Ballari</li>
+            <li><strong>Work Models:</strong> On-site, Hybrid, Remote</li>
+          </ul>
+        </>
+      )
     },
     {
       question: "What is SafePush?",
-      answer: "SafePush is a plugin-based developer security gate that orchestrates Semgrep, Gitleaks, and Trivy to catch vulnerabilities, secrets, and risky AI code before they hit production."
+      answer: (
+        <>
+          <p>
+            SafePush is a plugin-based developer security gate that orchestrates code scanners like Semgrep, Gitleaks, and Trivy. It runs automatically in CI/CD pipelines or as a pre-commit hook to catch vulnerabilities, hardcoded secrets, and risky AI-generated code before it reaches production.
+          </p>
+          <ul className="list-disc pl-5 mt-4 space-y-1 text-sm">
+            <li><strong>SAST:</strong> Semgrep Integration</li>
+            <li><strong>Secret Scanning:</strong> Gitleaks integration</li>
+            <li><strong>Container Security:</strong> Trivy integration</li>
+            <li><strong>Implementation:</strong> Pre-commit / CI pipelines</li>
+          </ul>
+        </>
+      )
     }
   ];
 
@@ -40,28 +110,24 @@ export default function FaqPage() {
     <>
       <main className="min-h-screen flex flex-col pt-24 pb-12">
         <Navbar />
-        <section className="flex-grow px-6 max-w-3xl mx-auto w-full py-12">
-          <div className="mb-12">
-            <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-dim)', fontWeight: 600, display: 'block', marginBottom: '8px' }}>
-              Knowledge Base
-            </span>
-            <h1 style={{ fontSize: '2.5rem', fontWeight: 500, color: 'var(--text)', letterSpacing: '-0.02em', lineHeight: 1.2 }}>
-              Frequently Asked Questions
-            </h1>
-            <p style={{ marginTop: '8px', color: 'var(--text-muted)' }}>
-              Direct answers about my expertise, projects, and availability.
-            </p>
-          </div>
+        <section className="flex-grow">
+          <div className="section-label">Knowledge Base</div>
+          <h1 className="section-title" style={{ marginBottom: '24px' }}>
+            Frequently Asked Questions
+          </h1>
+          <p className="hero-tagline" style={{ marginBottom: '64px' }}>
+            Direct answers about my expertise, projects, and availability.
+          </p>
 
-          <div className="space-y-8">
+          <div className="about-visuals-column" style={{ gap: '24px' }}>
             {faqs.map((faq, index) => (
-              <div key={index} className="border-b border-white/5 pb-8 last:border-0">
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '12px' }}>
+              <div key={index} className="stat-card" style={{ padding: '32px' }}>
+                <h2 className="glow-text" style={{ fontSize: '1.25rem', marginBottom: '16px' }}>
                   {faq.question}
                 </h2>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>
+                <div className="about-text" style={{ fontSize: '0.95rem' }}>
                   {faq.answer}
-                </p>
+                </div>
               </div>
             ))}
           </div>

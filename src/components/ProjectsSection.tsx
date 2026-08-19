@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import Link from 'next/link';
 import ScrollReveal from './ScrollReveal';
 
 interface Project {
@@ -13,6 +14,7 @@ interface Project {
   tags: string[];
   github: string;
   liveApp?: string;
+  caseStudy?: string;
   accent: string; // Hue value for minimal color splash
 }
 
@@ -26,6 +28,7 @@ const projects: Project[] = [
     desc: 'Production-grade AI study companion using RAG, FAISS, and LangChain. Features dual-portal RBAC and a PDF ingestion pipeline for Indian university curriculum.',
     tags: ['Python', 'RAG', 'LangChain', 'FAISS', 'Groq API'],
     github: 'https://github.com/Not-muzzyy/edusathi',
+    caseStudy: '/projects/edusaathi/',
     accent: '150', // Minimal teal
   },
   {
@@ -36,6 +39,7 @@ const projects: Project[] = [
     desc: 'AI-powered SIEM for SOC-style monitoring. Features ML attack classification, automated risk scoring, and SHAP explainability with Groq narrative incident reports.',
     tags: ['Python', 'Streamlit', 'Scikit-learn', 'SHAP', 'Groq'],
     github: 'https://github.com/Not-muzzyy/mini-siem-ai',
+    caseStudy: '/projects/mini-siem-ai/',
     accent: '270', // Minimal purple
   },
   {
@@ -47,6 +51,7 @@ const projects: Project[] = [
     desc: '3-layer ML phishing detection pipeline achieving 97% accuracy for English/Hindi/Hinglish. Extracts 20+ URL features evaluated via ensemble methods.',
     tags: ['Python', 'Scikit-learn', 'Pandas', 'NLP'],
     github: 'https://github.com/Not-muzzyy/phishing-detector-advanced',
+    caseStudy: '/projects/phishing-detector/',
     accent: '210', // Minimal blue
   },
   {
@@ -57,6 +62,7 @@ const projects: Project[] = [
     desc: 'Interactive geospatial dashboard with AI 7-day risk forecasting and anomaly detection. Built in 24 hours at Chakravyuha 3.0 Hackathon.',
     tags: ['Python', 'Folium', 'Plotly', 'Streamlit'],
     github: 'https://github.com/Not-muzzyy/virtual-pollution-intelligence-grid',
+    caseStudy: '/projects/virtual-pollution-grid/',
     accent: '30', // Minimal amber
   }
 ];
@@ -129,6 +135,15 @@ function ProjectCard({ p }: { p: Project }) {
           ))}
         </div>
         <div className="project-links">
+          {p.caseStudy && (
+            <Link
+              href={p.caseStudy}
+              className="project-link"
+            >
+              <span className="link-text">Case Study</span>
+              <span className="link-arrow">→</span>
+            </Link>
+          )}
           <a
             href={p.github}
             className="project-link"
