@@ -6,6 +6,9 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Mohammed Muzammil C',
   description: 'Privacy policy for Mohammed Muzammil C portfolio and services.',
+  alternates: {
+    canonical: '/privacy-policy/',
+  }
 };
 
 export default function PrivacyPolicyPage() {

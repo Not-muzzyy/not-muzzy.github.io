@@ -33,9 +33,6 @@ keywords: [
 ], 
 creator: "Mohammed Muzammil C", 
 publisher: "Mohammed Muzammil C", 
-alternates: { 
-canonical: "https://muzzyy.me", 
-}, 
 other: { 
 "geo.region": "IN-KA", 
 "geo.placename": "Ballari", 

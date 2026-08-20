@@ -4,8 +4,11 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'SOC Analyst & Cybersecurity Engineer in Bangalore | Mohammed Muzammil C',
-  description: 'Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer. Available for on-site, hybrid, and remote SOC Analyst roles in Bangalore (Bengaluru), India.',
+  title: 'SOC Analyst in Bengaluru | Cybersecurity Engineer - Mohammed Muzammil C',
+  description: 'Mohammed Muzammil C is a Cybersecurity Engineer available for SOC Analyst and Applied AI roles in Bengaluru (Bangalore), Karnataka.',
+  alternates: {
+    canonical: '/locations/bangalore/',
+  }
 };
 
 export default function BangaloreLocationPage() {

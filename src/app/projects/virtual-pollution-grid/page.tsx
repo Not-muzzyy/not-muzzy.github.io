@@ -6,6 +6,9 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Virtual Pollution Intel Grid Case Study | Mohammed Muzammil C',
   description: 'Interactive geospatial monitoring dashboard with 7-day AI risk forecasting and scenario simulations.',
+  alternates: {
+    canonical: '/projects/virtual-pollution-grid/',
+  }
 };
 
 export default function PollutionGridPage() {

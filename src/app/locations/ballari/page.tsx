@@ -6,6 +6,9 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'SOC Analyst & Cybersecurity Engineer in Ballari | Mohammed Muzammil C',
   description: 'Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer located in Ballari, Karnataka. Available for local and remote SOC Analyst roles.',
+  alternates: {
+    canonical: '/locations/ballari/',
+  }
 };
 
 export default function BallariLocationPage() {

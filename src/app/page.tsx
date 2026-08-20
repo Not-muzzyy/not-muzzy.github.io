@@ -10,6 +10,9 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Mohammed Muzammil C | Cybersecurity & AI Engineer',
   description: 'Cybersecurity Engineer & AI Developer based in Ballari. Specializing in SOC analysis, SIEM systems, and RAG architectures.',
+  alternates: {
+    canonical: '/',
+  },
 };
 
 function Divider() {

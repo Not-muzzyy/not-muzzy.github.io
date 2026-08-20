@@ -4,8 +4,11 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'EduSathi Case Study | Mohammed Muzammil C',
-  description: 'Production-grade AI study companion utilizing RAG, FAISS, LangChain, and Groq API with dual-portal RBAC for university curricula.',
+  title: 'EduSathi AI - Case Study | Mohammed Muzammil C',
+  description: 'Production-grade AI study companion using RAG, FAISS, and LangChain for Indian university curriculum.',
+  alternates: {
+    canonical: '/projects/edusaathi/',
+  }
 };
 
 export default function EduSathiPage() {

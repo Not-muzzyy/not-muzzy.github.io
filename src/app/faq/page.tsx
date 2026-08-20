@@ -6,6 +6,9 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions | Mohammed Muzammil C',
   description: 'Direct answers regarding Mohammed Muzammil C, his cybersecurity projects, and AI development expertise.',
+  alternates: {
+    canonical: '/faq/',
+  }
 };
 
 export default function FaqPage() {

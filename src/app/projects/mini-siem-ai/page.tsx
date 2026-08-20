@@ -6,6 +6,9 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Mini-SIEM AI Case Study | Mohammed Muzammil C',
   description: 'AI-powered Security Information and Event Management system with ML attack classification, automated risk scoring, and SHAP explainability.',
+  alternates: {
+    canonical: '/projects/mini-siem-ai/',
+  }
 };
 
 export default function MiniSiemPage() {

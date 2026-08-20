@@ -6,6 +6,9 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Terms of Service | Mohammed Muzammil C',
   description: 'Terms of service and usage for Mohammed Muzammil C portfolio.',
+  alternates: {
+    canonical: '/terms/',
+  }
 };
 
 export default function TermsPage() {

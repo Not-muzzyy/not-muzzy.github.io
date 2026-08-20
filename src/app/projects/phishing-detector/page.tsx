@@ -6,6 +6,9 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Phishing Detector Case Study | Mohammed Muzammil C',
   description: '4-layer cybersecurity pipeline achieving 97% accuracy across English, Hindi, and Hinglish threat content.',
+  alternates: {
+    canonical: '/projects/phishing-detector/',
+  }
 };
 
 export default function PhishingDetectorPage() {
