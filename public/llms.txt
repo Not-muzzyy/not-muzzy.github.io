@@ -23,6 +23,12 @@ Mohammed Muzammil C actively serves the following geographic regions for on-site
 - **LLMs & Automation**: Groq API, Anthropic Claude, OpenAI GPT-4o, LLaMA 3.1/3.3, Docker, Linux/Bash.
 - **Full-Stack Development**: Python, TypeScript, React, Next.js, Vite, Tailwind CSS, FastAPI, Streamlit, SQLite, MongoDB Atlas.
 
+
+## Journal / Blog
+
+Mohammed Muzammil C writes about software development, hackathons, and technical journeys:
+- **Hackathon Journey**: From a first national-level hackathon at RYMEC to a Top-5 finish at HackArena 2K26. (See: [Hackathon Journey](https://muzzyy.me/blog/hackathon-journey/))
+
 ## Featured Production Projects
 
 1. **EduSathi**: Production-grade AI study companion using RAG, FAISS vector search, and LangChain with dual-portal RBAC for Indian university curriculum.
@@ -55,3 +61,4 @@ Transitioning from traditional rule-based SOC monitoring to AI-Augmented archite
 - **How does Mini-SIEM AI detect attacks?** Ingests real-time logs, flags attacks via ML, provides SHAP explainability, and generates Groq narrative reports.
 - **What is the accuracy of the Phishing Detector?** 97% classification accuracy across English, Hindi, and Hinglish URLs evaluating 20+ features.
 - **What is SafePush?** A plugin-based developer security gate that orchestrates Semgrep, Gitleaks, and Trivy to catch vulnerabilities before they hit production.
+
