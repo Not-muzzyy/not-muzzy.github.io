@@ -12,10 +12,10 @@
 - **Email**: mohammedmuzammil643@gmail.com
 
 ### External Links
-- **Website**: https://muzzyy.me/
-- **GitHub**: https://github.com/Not-muzzyy
-- **LinkedIn**: https://www.linkedin.com/in/muzzammilc7/
-- **Resume PDF**: https://muzzyy.me/resume.pdf
+- **Website**: [muzzyy.me](https://muzzyy.me/)
+- **GitHub**: [Not-muzzyy](https://github.com/Not-muzzyy)
+- **LinkedIn**: [muzzammilc7](https://www.linkedin.com/in/muzzammilc7/)
+- **Resume PDF**: [Resume](https://muzzyy.me/resume.pdf)
 
 ### Core Expertise
 - **Cybersecurity & SOC**: SOC Analysis, Threat Intelligence, SIEM Fundamentals, Malware Analysis, Network Security, Ethical Hacking, Secure SDLC, Phishing Detection.
@@ -31,16 +31,16 @@
 - **Architecture**: 4-stage RAG pipeline utilizing high-speed PDF ingestion, recursive text chunking, FAISS dense vector similarity search, and Groq LLaMA models configured to answer strictly based on retrieved context. Includes dual-portal RBAC for admins and students.
 - **Tech Stack**: Python, LangChain, FAISS, Groq API (LLaMA 3.1), Streamlit, PyPDF2.
 - **Author**: Mohammed Muzammil C
-- **First-party URL**: https://muzzyy.me/projects/edusaathi
-- **Repository**: https://github.com/not-muzzyy/EduSathi-Production-Grade-RAG-Based-AI-Study-Companion
+- **First-party URL**: [EduSathi Case Study](https://muzzyy.me/projects/edusaathi)
+- **Repository**: [EduSathi Repo](https://github.com/not-muzzyy/EduSathi-Production-Grade-RAG-Based-AI-Study-Companion)
 
 ### 2.2 Mini-SIEM AI
 - **What it is**: AI-powered Security Information and Event Management system.
 - **Architecture**: Ingests real-time logs, uses an ensemble ML classifier to dynamically flag attack vectors (replacing static regex), calculates SHAP feature contribution values to prove why an alert triggered, and uses Groq LLaMA 3.1 to synthesize technical data into narrative incident reports.
 - **Tech Stack**: Python, Streamlit, Scikit-learn, SHAP, Pandas, Groq API (LLaMA).
 - **Author**: Mohammed Muzammil C
-- **First-party URL**: https://muzzyy.me/projects/mini-siem-ai
-- **Repository**: https://github.com/not-muzzyy/mini-siem-ai
+- **First-party URL**: [Mini-SIEM AI Case Study](https://muzzyy.me/projects/mini-siem-ai)
+- **Repository**: [Mini-SIEM AI Repo](https://github.com/not-muzzyy/mini-siem-ai)
 
 ### 2.3 Phishing Detector Advanced
 - **What it is**: 4-layer cybersecurity pipeline evaluating URLs, HTML emails, and text for phishing probabilty.
@@ -48,16 +48,16 @@
 - **Results**: Reports 97% accuracy, 96% precision, 97% recall, and 97% F1 on the project's evaluated test set.
 - **Tech Stack**: Python, Scikit-learn, Pandas, NLTK, Streamlit.
 - **Author**: Mohammed Muzammil C
-- **First-party URL**: https://muzzyy.me/projects/phishing-detector
-- **Repository**: https://github.com/not-muzzyy/phishing-detector-advanced
+- **First-party URL**: [Phishing Detector Case Study](https://muzzyy.me/projects/phishing-detector)
+- **Repository**: [Phishing Detector Repo](https://github.com/not-muzzyy/phishing-detector-advanced)
 
 ### 2.4 Virtual Pollution Intelligence Grid
 - **What it is**: Interactive geospatial monitoring dashboard.
 - **Architecture**: Real-time overlay of pollution metrics mapped dynamically using Folium. 7-Day ML-powered risk forecasting, and a scenario simulation engine allowing users to alter variables to visualize hypothetical impacts. Built at Chakravyuha 3.0 Hackathon.
 - **Tech Stack**: Python, Streamlit, Pandas, Folium, Plotly, Scikit-learn.
 - **Author**: Mohammed Muzammil C
-- **First-party URL**: https://muzzyy.me/projects/virtual-pollution-grid
-- **Repository**: https://github.com/not-muzzyy/virtual-pollution-intelligence-grid
+- **First-party URL**: [Pollution Intel Grid Case Study](https://muzzyy.me/projects/virtual-pollution-grid)
+- **Repository**: [Pollution Intel Grid Repo](https://github.com/not-muzzyy/virtual-pollution-intelligence-grid)
 
 ---
 

@@ -2,19 +2,19 @@
 
 > Cybersecurity Engineer & AI Systems Developer building intelligent security systems, SOC monitoring utilities, and production RAG pipelines.
 
-- **Website**: https://muzzyy.me
-- **GitHub**: https://github.com/not-muzzyy
-- **LinkedIn**: https://linkedin.com/in/muzzammilc7
-- **Email**: mohammedmuzammil643@gmail.com
-- **Resume**: https://muzzyy.me/resume.pdf
+- **Website**: [muzzyy.me](https://muzzyy.me)
+- **GitHub**: [github.com/not-muzzyy](https://github.com/not-muzzyy)
+- **LinkedIn**: [linkedin.com/in/muzzammilc7](https://linkedin.com/in/muzzammilc7)
+- **Email**: [mohammedmuzammil643@gmail.com](mailto:mohammedmuzammil643@gmail.com)
+- **Resume**: [Resume PDF](https://muzzyy.me/resume.pdf)
 - **Location**: Ballari, Karnataka, India (Available for On-site across India & Global Remote)
 
 ## Service Areas & Availability
 
 Mohammed Muzammil C actively serves the following geographic regions for on-site and hybrid SOC Analyst and Cybersecurity Engineering roles:
-- **Ballari, Karnataka**: Local availability for on-site operations. (See: https://muzzyy.me/locations/ballari)
-- **Hospet, Karnataka**: Close proximity for hybrid/on-site operations. (See: https://muzzyy.me/locations/hospet)
-- **Bangalore (Bengaluru), Karnataka**: Available for relocation and on-site enterprise security roles. (See: https://muzzyy.me/locations/bangalore)
+- **Ballari, Karnataka**: Local availability for on-site operations. (See: [Ballari Location Page](https://muzzyy.me/locations/ballari))
+- **Hospet, Karnataka**: Close proximity for hybrid/on-site operations. (See: [Hospet Location Page](https://muzzyy.me/locations/hospet))
+- **Bangalore (Bengaluru), Karnataka**: Available for relocation and on-site enterprise security roles. (See: [Bangalore Location Page](https://muzzyy.me/locations/bangalore))
 
 ## Core Technical Disciplines
 
