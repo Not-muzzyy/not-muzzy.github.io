@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next"; 
+import Script from "next/script"; 
 import JsonLd from "@/components/JsonLd"; 
 import "./globals.css"; 
 
@@ -99,6 +100,7 @@ return (
 <link rel="dns-prefetch" href="https://github.com" /> 
 <link rel="dns-prefetch" href="https://linkedin.com" />
 <link rel="alternate" type="text/plain" title="LLM context" href="/llms.txt" />
+<link rel="alternate" type="text/plain" title="Full LLM context" href="/llms-full.txt" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head> 
 <body className="bg-[#0a0a0c] text-zinc-100 antialiased font-sans selection:bg-emerald-500/30 selection:text-emerald-300"> 
@@ -108,6 +110,7 @@ return (
 <a href="mailto:mohammedmuzammil643@gmail.com" className="mobile-sticky-cta">
   Contact Me
 </a>
+<Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
 </body> 
 </html> 
 ); 

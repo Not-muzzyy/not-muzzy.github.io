@@ -4,11 +4,17 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Mohammed Muzammil C',
+  title: 'Privacy Policy',
   description: 'Privacy policy for Mohammed Muzammil C portfolio and services.',
   alternates: {
     canonical: '/privacy-policy/',
-  }
+  },
+  openGraph: {
+    title: 'Privacy Policy | Mohammed Muzammil C',
+    description: 'Privacy policy for Mohammed Muzammil C portfolio and services.',
+    url: 'https://muzzyy.me/privacy-policy/',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPolicyPage() {
@@ -25,7 +31,7 @@ export default function PrivacyPolicyPage() {
               Privacy Policy
             </h1>
             <p style={{ marginTop: '8px', color: 'var(--text-muted)' }}>
-              Last updated: August 2026
+              Last updated: September 2026
             </p>
           </div>
 
@@ -38,9 +44,12 @@ export default function PrivacyPolicyPage() {
             </div>
 
             <div>
-              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>2. Data Collection</h2>
+              <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text)', marginBottom: '16px' }}>2. Data Collection & Analytics</h2>
               <p>
-                This website does not use tracking cookies, analytics trackers, or hidden telemetry. The only data collected is standard server access logs required for hosting (e.g., IP addresses, browser agents) processed by our hosting provider (GitHub Pages). 
+                This website uses <strong>Simple Analytics</strong>, a privacy-first, cookieless analytics solution. Simple Analytics does not collect personal data, does not use tracking cookies, and does not track visitors across websites. It collects only anonymized, aggregate metrics (such as page visits and general referrer sources) in full compliance with GDPR, PECR, and CCPA.
+              </p>
+              <p className="mt-4">
+                Standard server access logs (e.g., IP addresses, browser agents) may also be processed by our hosting provider (GitHub Pages) for security and operational integrity.
               </p>
               <p className="mt-4">
                 If you choose to contact me via email or LinkedIn, the information you provide will only be used to respond to your inquiry and will never be sold or shared with third parties.

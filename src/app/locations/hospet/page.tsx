@@ -4,11 +4,17 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'SOC Analyst & Cybersecurity Engineer in Hospet | Mohammed Muzammil C',
+  title: 'SOC Analyst & Cyber Engineer in Hospet',
   description: 'Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer serving Hospet, Karnataka. Available for local and remote SOC Analyst roles.',
   alternates: {
     canonical: '/locations/hospet/',
-  }
+  },
+  openGraph: {
+    title: 'SOC Analyst & Cyber Engineer in Hospet | Mohammed Muzammil C',
+    description: 'Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer serving Hospet, Karnataka. Available for local and remote SOC Analyst roles.',
+    url: 'https://muzzyy.me/locations/hospet/',
+    type: 'website',
+  },
 };
 
 export default function HospetLocationPage() {
@@ -16,19 +22,26 @@ export default function HospetLocationPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Mohammed Muzammil C - Cybersecurity Services",
-    "image": "https://muzzyy.me/favicon.ico",
+    "image": "https://muzzyy.me/icon.png",
     "description": "Cybersecurity Engineer, SOC Analyst, and AI Systems Developer serving Hospet.",
+    "priceRange": "$$",
+    "email": "mailto:mohammedmuzammil643@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Hospet",
       "addressRegion": "Karnataka",
       "addressCountry": "IN"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 15.2740,
+      "longitude": 76.3888
+    },
     "areaServed": {
       "@type": "City",
       "name": "Hospet"
     },
-    "url": "https://muzzyy.me/locations/hospet"
+    "url": "https://muzzyy.me/locations/hospet/"
   };
 
   const faqSchema = {

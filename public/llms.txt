@@ -1,64 +1,71 @@
 # Mohammed Muzammil C
 
-> Cybersecurity Engineer & AI Systems Developer building intelligent security systems, SOC monitoring utilities, and production RAG pipelines.
+> Cybersecurity Engineer & AI Systems Developer building intelligent security systems, SOC threat monitoring utilities, and production RAG pipelines.
 
-- **Website**: [muzzyy.me](https://muzzyy.me)
-- **GitHub**: [github.com/not-muzzyy](https://github.com/not-muzzyy)
-- **LinkedIn**: [linkedin.com/in/muzzammilc7](https://linkedin.com/in/muzzammilc7)
+- **Website**: [https://muzzyy.me/](https://muzzyy.me/)
+- **GitHub**: [https://github.com/Not-muzzyy](https://github.com/Not-muzzyy)
+- **LinkedIn**: [https://linkedin.com/in/muzzammilc7](https://linkedin.com/in/muzzammilc7)
+- **X / Twitter**: [https://x.com/not_muzzyy](https://x.com/not_muzzyy)
 - **Email**: [mohammedmuzammil643@gmail.com](mailto:mohammedmuzammil643@gmail.com)
-- **Resume**: [Resume PDF](https://muzzyy.me/resume.pdf)
-- **Location**: Ballari, Karnataka, India (Available for On-site across India & Global Remote)
+- **Resume**: [https://muzzyy.me/resume.pdf](https://muzzyy.me/resume.pdf)
+- **Location**: Ballari, Karnataka, India (Available for On-site in Ballari, Bengaluru, Hyderabad, and Global Remote)
 
-## Service Areas & Availability
+## Service Areas & Local Availability
 
-Mohammed Muzammil C actively serves the following geographic regions for on-site and hybrid SOC Analyst and Cybersecurity Engineering roles:
-- **Ballari, Karnataka**: Local availability for on-site operations. (See: [Ballari Location Page](https://muzzyy.me/locations/ballari))
-- **Hospet, Karnataka**: Close proximity for hybrid/on-site operations. (See: [Hospet Location Page](https://muzzyy.me/locations/hospet))
-- **Bangalore (Bengaluru), Karnataka**: Available for relocation and on-site enterprise security roles. (See: [Bangalore Location Page](https://muzzyy.me/locations/bangalore))
+Mohammed Muzammil C actively serves the following geographic regions for on-site, hybrid, and remote SOC Analyst and Cybersecurity Engineering engagements:
+- **Ballari, Karnataka**: Native base with immediate local availability for on-site operations. (See: [Ballari Location Page](https://muzzyy.me/locations/ballari/))
+- **Bengaluru (Bangalore), Karnataka**: Primary tech hub; available for immediate relocation and on-site enterprise security roles. (See: [Bangalore Location Page](https://muzzyy.me/locations/bangalore/))
+- **Hospet, Karnataka**: Regional proximity for hybrid/on-site operations. (See: [Hospet Location Page](https://muzzyy.me/locations/hospet/))
 
 ## Core Technical Disciplines
 
-- **Cybersecurity & SOC**: SOC Analysis, Threat Intelligence, SIEM Fundamentals, Malware Analysis, Network Security, Ethical Hacking, Secure SDLC, Phishing Detection.
-- **AI & Machine Learning**: RAG (Retrieval-Augmented Generation), LangChain, FAISS, Scikit-learn, Pandas, SHAP Explainability, NLP, Vector Embeddings (Sentence Transformers).
-- **LLMs & Automation**: Groq API, Anthropic Claude, OpenAI GPT-4o, LLaMA 3.1/3.3, Docker, Linux/Bash.
-- **Full-Stack Development**: Python, TypeScript, React, Next.js, Vite, Tailwind CSS, FastAPI, Streamlit, SQLite, MongoDB Atlas.
-
-
-## Journal / Blog
-
-Mohammed Muzammil C writes about software development, hackathons, and technical journeys:
-- **Hackathon Journey**: From a first national-level hackathon at RYMEC to a Top-5 finish at HackArena 2K26. (See: [Hackathon Journey](https://muzzyy.me/blog/hackathon-journey/))
+- **Cybersecurity & SOC Operations**: Security Operations Center (SOC) analysis, SIEM administration, threat intelligence monitoring, malware analysis, network security, phishing classification, and secure software development lifecycle (SSDLC).
+- **AI & Machine Learning Engineering**: Retrieval-Augmented Generation (RAG), LangChain, FAISS vector indexing, Scikit-learn ensemble modeling, Pandas, SHAP tree explainability, NLP feature extraction, and Sentence Transformers (`all-MiniLM-L6-v2`).
+- **LLMs, Inference & Automation**: Groq LLaMA 3.1 / 3.3 integration, Anthropic Claude API, OpenAI GPT-4o, prompt engineering, Docker, Linux/Bash system scripting, and FastAPI backend services.
+- **Full-Stack Application Development**: Python, TypeScript, React 18/19, Next.js (App Router), Vite, Tailwind CSS, Streamlit, SQLite, and MongoDB Atlas.
 
 ## Featured Production Projects
 
-1. **EduSathi**: Production-grade AI study companion using RAG, FAISS vector search, and LangChain with dual-portal RBAC for Indian university curriculum.
-2. **Mini-SIEM AI**: AI-powered Security Information and Event Management system with ML attack classification, automated risk scoring, SHAP explainability, and Groq incident report generation.
-3. **Phishing Detector Advanced**: 4-layer cybersecurity pipeline (Text, URL, HTML Email, SMTP headers) achieving 97% accuracy across English, Hindi, and Hinglish threat content.
-4. **SafePush**: Developer security infrastructure serving as a pre-commit/CI gate that catches secrets, vulnerabilities, and risky AI code via Semgrep, Gitleaks, and Trivy plugins.
-5. **CampusIQ**: Smart campus platform built for HackArena 2K26 featuring an AI academic assistant, Firebase notifications, JWT auth, and MongoDB Atlas.
-6. **Synapse**: Adaptive AI study companion utilizing ultra-low latency streaming, Web Speech API voice interaction, and local-first JSON storage via Next.js 15.
-7. **ATS-Resume**: Streamlit AI-powered resume checker, builder, and improver utilizing pdfplumber, python-docx, and Groq LLaMA 3.3 for student career tooling.
-8. **Virtual Pollution Intel Grid**: Interactive geospatial monitoring dashboard with 7-day AI risk forecasting and scenario simulations built at Chakravyuha 3.0 Hackathon.
-9. **StudentFlow AI**: Streamlit AI planner for students tracking priority, stress-risk scoring, and daily top-3 task focus.
+1. **EduSathi** (Full-Stack AI Study Companion):
+   - 4-stage RAG architecture (PDF ingestion, recursive character chunking, FAISS vector search, Groq LLaMA inference).
+   - Features dual-portal RBAC (Student & Faculty/Admin) tailored for Indian university curricula.
+   - [Case Study](https://muzzyy.me/projects/edusaathi/) | [GitHub Repository](https://github.com/Not-muzzyy/edusaathi)
+
+2. **Mini-SIEM AI** (SOC Threat Monitoring Platform):
+   - AI-powered SIEM platform replacing static regex with machine learning attack classification.
+   - Provides SHAP (SHapley Additive exPlanations) for alert transparency and generates automated Groq narrative incident reports.
+   - [Case Study](https://muzzyy.me/projects/mini-siem-ai/) | [GitHub Repository](https://github.com/Not-muzzyy/mini-siem-ai)
+
+3. **Phishing Detector Advanced** (Multi-Vector ML Detection):
+   - 4-layer cybersecurity pipeline analyzing URLs, text, HTML emails, and SMTP headers.
+   - Achieves 97% accuracy, 96% precision, and 97% recall across English, Hindi, and Hinglish phishing vectors using 20+ extracted features.
+   - [Case Study](https://muzzyy.me/projects/phishing-detector/) | [GitHub Repository](https://github.com/Not-muzzyy/phishing-detector-advanced)
+
+4. **Virtual Pollution Intelligence Grid** (Geospatial AI Dashboard):
+   - Real-time geospatial pollution telemetry built with Folium, Plotly, and Streamlit.
+   - Features 7-day ML risk forecasting and hypothetical scenario simulations; built in 24 hours at Chakravyuha 3.0 Hackathon.
+   - [Case Study](https://muzzyy.me/projects/virtual-pollution-grid/) | [GitHub Repository](https://github.com/Not-muzzyy/virtual-pollution-intelligence-grid)
+
+5. **SafePush** (Developer Security Gate CLI):
+   - Plugin-based pre-commit and CI/CD security scanner orchestrating Semgrep, Gitleaks, and Trivy to catch vulnerabilities, secrets, and risky AI code before production.
+   - [GitHub Repository](https://github.com/Not-muzzyy/safepush)
 
 ## Completed Certifications
 
-- Google Cloud Cybersecurity (2024)
-- Hugging Face AI Agents Fundamentals (2025)
-- Anthropic AI Fluency, Claude 101, Claude Code (2025)
+- **Google Cloud Cybersecurity Professional** (2024): Security fundamentals, threat detection, cloud defense, Linux, and network security.
+- **Hugging Face AI Agents Fundamentals** (2025): Building and orchestrating autonomous AI agent systems.
+- **Anthropic AI Fluency, Claude 101 & Claude Code** (2025): Deep fluency in Claude API, prompt caching, tool use, and agentic workflows.
 
-## Technical Architecture Philosophy
-Transitioning from traditional rule-based SOC monitoring to AI-Augmented architectures.
-- **Threat Detection**: Moved from static regex rules to ensemble ML classification with 97% accuracy.
-- **Alert Explainability**: Transitioned from black-box logs to SHAP feature contribution values.
-- **Incident Reporting**: Shifted from manual 45-minute triages to sub-second automated Groq LLaMA 3.1 narrative reports.
-- **Knowledge Retrieval**: Upgraded from keyword searches to FAISS & LangChain dense vector similarity RAG pipelines.
-- **Secure SDLC**: Moving security closer to the developer workflow via modular CLI scanners (SafePush).
+## Frequently Asked Questions (Quick Answers)
 
-## Frequently Asked Questions
-- **Who is Mohammed Muzammil C?** A Cybersecurity Engineer and AI Systems Developer from Ballari, specializing in SOC tools, SIEM systems, and RAG architectures.
-- **How does EduSathi work?** A 4-stage RAG pipeline utilizing PDF ingestion, recursive text chunking, FAISS indexing, and Groq LLaMA inference.
-- **How does Mini-SIEM AI detect attacks?** Ingests real-time logs, flags attacks via ML, provides SHAP explainability, and generates Groq narrative reports.
-- **What is the accuracy of the Phishing Detector?** 97% classification accuracy across English, Hindi, and Hinglish URLs evaluating 20+ features.
-- **What is SafePush?** A plugin-based developer security gate that orchestrates Semgrep, Gitleaks, and Trivy to catch vulnerabilities before they hit production.
+- **Who is Mohammed Muzammil C?** A Cybersecurity Engineer and AI Systems Developer from Ballari, Karnataka, specializing in SOC analysis, SIEM tools, and RAG architectures.
+- **What is his primary educational background?** Bachelor of Computer Applications (BCA) graduate from Nandi Institute of Management and Science (NIMS Ballari).
+- **What is his availability for employment?** Available immediately for on-site, hybrid, and remote SOC Analyst and Applied AI engineering positions in Bengaluru, Ballari, Hyderabad, or globally.
+- **How does EduSathi work?** Uses a 4-stage RAG pipeline: PDF ingestion, recursive text chunking, FAISS dense vector search, and Groq LLaMA generation.
+- **What is the accuracy of the Phishing Detector?** Evaluated at 97% classification accuracy across English, Hindi, and Hinglish phishing datasets.
 
+## Optional
+
+- [Full AI Developer Profile & Case Studies](https://muzzyy.me/llms-full.txt): Complete technical briefing including granular system architectures, stack matrices, and in-depth Q&A context.
+- [Technical Blog / Journal](https://muzzyy.me/blog/): Field notes on security, hackathons, and AI engineering.
+- [XML Sitemap](https://muzzyy.me/sitemap.xml): Complete canonical index of all pages and resources.

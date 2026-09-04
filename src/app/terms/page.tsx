@@ -4,11 +4,17 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Mohammed Muzammil C',
+  title: 'Terms of Service',
   description: 'Terms of service and usage for Mohammed Muzammil C portfolio.',
   alternates: {
     canonical: '/terms/',
-  }
+  },
+  openGraph: {
+    title: 'Terms of Service | Mohammed Muzammil C',
+    description: 'Terms of service and usage for Mohammed Muzammil C portfolio.',
+    url: 'https://muzzyy.me/terms/',
+    type: 'website',
+  },
 };
 
 export default function TermsPage() {

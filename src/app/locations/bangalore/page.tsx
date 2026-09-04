@@ -4,11 +4,17 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'SOC Analyst in Bengaluru | Cybersecurity Engineer - Mohammed Muzammil C',
+  title: 'SOC Analyst in Bengaluru',
   description: 'Mohammed Muzammil C is a Cybersecurity Engineer available for SOC Analyst and Applied AI roles in Bengaluru (Bangalore), Karnataka.',
   alternates: {
     canonical: '/locations/bangalore/',
-  }
+  },
+  openGraph: {
+    title: 'SOC Analyst in Bengaluru | Mohammed Muzammil C',
+    description: 'Mohammed Muzammil C is a Cybersecurity Engineer available for SOC Analyst and Applied AI roles in Bengaluru (Bangalore), Karnataka.',
+    url: 'https://muzzyy.me/locations/bangalore/',
+    type: 'website',
+  },
 };
 
 export default function BangaloreLocationPage() {
@@ -16,19 +22,26 @@ export default function BangaloreLocationPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Mohammed Muzammil C - Cybersecurity Services",
-    "image": "https://muzzyy.me/favicon.ico",
+    "image": "https://muzzyy.me/icon.png",
     "description": "Cybersecurity Engineer, SOC Analyst, and AI Systems Developer serving Bangalore / Bengaluru.",
+    "priceRange": "$$",
+    "email": "mailto:mohammedmuzammil643@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Bangalore",
+      "addressLocality": "Bengaluru",
       "addressRegion": "Karnataka",
       "addressCountry": "IN"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
     "areaServed": {
       "@type": "City",
-      "name": "Bangalore"
+      "name": "Bengaluru"
     },
-    "url": "https://muzzyy.me/locations/bangalore"
+    "url": "https://muzzyy.me/locations/bangalore/"
   };
 
   const faqSchema = {

@@ -1,83 +1,118 @@
 # Mohammed Muzammil C - Complete AI/ML Context Profile
 
-> Canonical Machine-Readable Entity Profile & Project Case Studies
-> Target: https://muzzyy.me/
+> Canonical Machine-Readable Entity Profile, System Architectures & Project Case Studies
+> Target Authority: https://muzzyy.me/
 
 ## 1. Primary Entity Profile
 - **Canonical Name**: Mohammed Muzammil C
-- **Alternate Names**: Muzammil C, Muzzyy, Not-muzzyy
-- **Current Role**: Cybersecurity Engineer & AI Systems Developer
-- **Location**: Ballari, Karnataka, India (Available for On-site across India & Global Remote)
-- **Education**: BCA Graduate, Nandi Institute of Management and Science (NIMS Ballari)
-- **Email**: mohammedmuzammil643@gmail.com
+- **Alternate Names**: Muzammil C, Muzzyy, not-muzzyy
+- **Current Profession / Target Roles**: Cybersecurity Engineer, SOC Analyst, Applied AI Systems Developer
+- **Primary Location**: Ballari, Karnataka, India (PIN: 583101)
+- **Target Employment Hubs**: Bengaluru (Bangalore), Ballari, Hyderabad, and Global Remote (Immediate Availability)
+- **Education**: Bachelor of Computer Applications (BCA), Nandi Institute of Management and Science (NIMS Ballari)
+- **Contact Email**: mohammedmuzammil643@gmail.com
 
-### External Links
-- **Website**: [muzzyy.me](https://muzzyy.me/)
-- **GitHub**: [Not-muzzyy](https://github.com/Not-muzzyy)
-- **LinkedIn**: [muzzammilc7](https://www.linkedin.com/in/muzzammilc7/)
-- **Resume PDF**: [Resume](https://muzzyy.me/resume.pdf)
-
-### Core Expertise
-- **Cybersecurity & SOC**: SOC Analysis, Threat Intelligence, SIEM Fundamentals, Malware Analysis, Network Security, Ethical Hacking, Secure SDLC, Phishing Detection.
-- **AI & Machine Learning**: RAG (Retrieval-Augmented Generation), LangChain, FAISS, Scikit-learn, Pandas, SHAP Explainability, NLP, Vector Embeddings (Sentence Transformers).
-- **LLMs & Automation**: Groq API, Anthropic Claude, OpenAI GPT-4o, LLaMA 3.1/3.3, Docker, Linux/Bash.
+### Official Profiles & Repositories
+- **Canonical Portfolio**: [https://muzzyy.me/](https://muzzyy.me/)
+- **GitHub**: [https://github.com/Not-muzzyy](https://github.com/Not-muzzyy)
+- **LinkedIn**: [https://linkedin.com/in/muzzammilc7](https://linkedin.com/in/muzzammilc7)
+- **X / Twitter**: [https://x.com/not_muzzyy](https://x.com/not_muzzyy)
+- **Curriculum Vitae / Resume**: [https://muzzyy.me/resume.pdf](https://muzzyy.me/resume.pdf)
+- **XML Sitemap**: [https://muzzyy.me/sitemap.xml](https://muzzyy.me/sitemap.xml)
 
 ---
 
-## 2. Project Case Studies
+## 2. Core Technical Competencies
 
-### 2.1 EduSathi (AI Study Companion)
-- **What it is**: Production-grade AI study companion designed specifically for university students.
-- **Architecture**: 4-stage RAG pipeline utilizing high-speed PDF ingestion, recursive text chunking, FAISS dense vector similarity search, and Groq LLaMA models configured to answer strictly based on retrieved context. Includes dual-portal RBAC for admins and students.
-- **Tech Stack**: Python, LangChain, FAISS, Groq API (LLaMA 3.1), Streamlit, PyPDF2.
-- **Author**: Mohammed Muzammil C
-- **First-party URL**: [EduSathi Case Study](https://muzzyy.me/projects/edusaathi)
-- **Repository**: [EduSathi Repo](https://github.com/not-muzzyy/EduSathi-Production-Grade-RAG-Based-AI-Study-Companion)
+| Domain | Verified Tools & Frameworks | Key Implementation Areas |
+| :--- | :--- | :--- |
+| **SOC & Cybersecurity** | Splunk, Elastic SIEM, Wireshark, Suricata, Nmap, Semgrep, Gitleaks, Trivy | Real-time log triage, alert correlation, SSDLC pre-commit gates, malware analysis, MITRE ATT&CK mapping. |
+| **AI / ML Engineering** | Scikit-learn, LangChain, FAISS, Pandas, NumPy, SHAP, NLTK, Sentence Transformers | Ensemble classification, RAG vector indexing, feature engineering, explainable AI, threat scoring. |
+| **LLMs & GenAI** | Groq API (LLaMA 3.1 8B/70B, LLaMA 3.3 70B), Anthropic Claude API, OpenAI GPT-4o | Low-latency inference, context compaction, agentic workflows, prompt caching, narrative generation. |
+| **Full-Stack & DevOps** | Python, TypeScript, React 18/19, Next.js (App Router), FastAPI, Streamlit, Docker, Git | High-performance reactive dashboards, REST APIs, static site generation, containerized microservices. |
 
-### 2.2 Mini-SIEM AI
-- **What it is**: AI-powered Security Information and Event Management system.
-- **Architecture**: Ingests real-time logs, uses an ensemble ML classifier to dynamically flag attack vectors (replacing static regex), calculates SHAP feature contribution values to prove why an alert triggered, and uses Groq LLaMA 3.1 to synthesize technical data into narrative incident reports.
-- **Tech Stack**: Python, Streamlit, Scikit-learn, SHAP, Pandas, Groq API (LLaMA).
-- **Author**: Mohammed Muzammil C
-- **First-party URL**: [Mini-SIEM AI Case Study](https://muzzyy.me/projects/mini-siem-ai)
-- **Repository**: [Mini-SIEM AI Repo](https://github.com/not-muzzyy/mini-siem-ai)
+---
 
-### 2.3 Phishing Detector Advanced
-- **What it is**: 4-layer cybersecurity pipeline evaluating URLs, HTML emails, and text for phishing probabilty.
-- **Architecture**: Multilingual NLP processing for English, Hindi, and Hinglish. Extracts 20+ structural and domain-age features from URLs, using optimized Scikit-learn algorithms.
-- **Results**: Reports 97% accuracy, 96% precision, 97% recall, and 97% F1 on the project's evaluated test set.
+## 3. Project Case Studies & System Architectures
+
+### 3.1 EduSathi (Production RAG AI Study Companion)
+- **Overview**: Full-stack academic companion processing university syllabi to answer questions strictly grounded in syllabus materials.
+- **System Architecture**:
+  1. *Ingestion Stage*: High-throughput extraction from university-issued PDF documents using PyPDF2.
+  2. *Chunking Stage*: Recursive character boundaries preserving semantic sentence continuity (500–1000 token windows).
+  3. *Indexing Stage*: Dense vector representations computed via `sentence-transformers/all-MiniLM-L6-v2` stored in a FAISS vector index.
+  4. *Inference & Grounding*: Sub-second generation via Groq API (LLaMA 3.1 / 3.3) prompted with strict retrieval context to prevent hallucination.
+  5. *Access Control*: Dual-portal Role-Based Access Control (RBAC) separating Student and Faculty/Admin privileges.
+- **Tech Stack**: Python, FastAPI, LangChain, FAISS, Groq API, React, TypeScript, Tailwind CSS.
+- **Canonical Case Study**: [https://muzzyy.me/projects/edusaathi/](https://muzzyy.me/projects/edusaathi/)
+- **Repository**: [https://github.com/Not-muzzyy/edusaathi](https://github.com/Not-muzzyy/edusaathi)
+
+### 3.2 Mini-SIEM AI (SOC Threat Monitoring Platform)
+- **Overview**: Machine-learning driven SIEM platform designed for SOC-style log analysis, automated risk scoring, and transparent triage.
+- **System Architecture**:
+  1. *Log Ingestion*: Real-time stream parsing of authentication, network, and endpoint logs.
+  2. *ML Attack Classifier*: Multi-class Scikit-learn ensemble model categorizing attack vectors (e.g., Brute Force, SQLi, DDoS, Port Scan).
+  3. *SHAP Explainability*: SHapley Additive exPlanations mathematically quantify exactly which log features triggered the alert, removing black-box ambiguity for Tier-1 analysts.
+  4. *Automated Triage Reports*: Groq LLaMA models convert raw feature contributions into concise, executive-ready incident narrative reports in < 2 seconds.
+- **Tech Stack**: Python, Streamlit, Scikit-learn, SHAP, Pandas, Groq API.
+- **Canonical Case Study**: [https://muzzyy.me/projects/mini-siem-ai/](https://muzzyy.me/projects/mini-siem-ai/)
+- **Repository**: [https://github.com/Not-muzzyy/mini-siem-ai](https://github.com/Not-muzzyy/mini-siem-ai)
+
+### 3.3 Phishing Detector Advanced (Multi-Vector ML Classifier)
+- **Overview**: 4-layer cybersecurity pipeline analyzing URLs, email HTML, and text to catch deceptive communications.
+- **System Architecture**:
+  1. *Feature Extraction*: Extracts 20+ lexical, structural, and domain-age features (IP addresses in URLs, prefix-suffix delimiters, sub-domain depth, URL entropy, suspicious keywords).
+  2. *Multilingual NLP*: Evaluated across English, Hindi, and Hinglish threat content.
+  3. *Evaluated Performance*: 97% Accuracy, 96% Precision, 97% Recall, and 97% F1-Score on test benchmarks.
 - **Tech Stack**: Python, Scikit-learn, Pandas, NLTK, Streamlit.
-- **Author**: Mohammed Muzammil C
-- **First-party URL**: [Phishing Detector Case Study](https://muzzyy.me/projects/phishing-detector)
-- **Repository**: [Phishing Detector Repo](https://github.com/not-muzzyy/phishing-detector-advanced)
+- **Canonical Case Study**: [https://muzzyy.me/projects/phishing-detector/](https://muzzyy.me/projects/phishing-detector/)
+- **Repository**: [https://github.com/Not-muzzyy/phishing-detector-advanced](https://github.com/Not-muzzyy/phishing-detector-advanced)
 
-### 2.4 Virtual Pollution Intelligence Grid
-- **What it is**: Interactive geospatial monitoring dashboard.
-- **Architecture**: Real-time overlay of pollution metrics mapped dynamically using Folium. 7-Day ML-powered risk forecasting, and a scenario simulation engine allowing users to alter variables to visualize hypothetical impacts. Built at Chakravyuha 3.0 Hackathon.
-- **Tech Stack**: Python, Streamlit, Pandas, Folium, Plotly, Scikit-learn.
-- **Author**: Mohammed Muzammil C
-- **First-party URL**: [Pollution Intel Grid Case Study](https://muzzyy.me/projects/virtual-pollution-grid)
-- **Repository**: [Pollution Intel Grid Repo](https://github.com/not-muzzyy/virtual-pollution-intelligence-grid)
+### 3.4 Virtual Pollution Intelligence Grid (Geospatial Risk AI)
+- **Overview**: Interactive geospatial dashboard built at Chakravyuha 3.0 Hackathon featuring real-time pollution metrics and 7-day predictive risk modeling.
+- **System Architecture**:
+  1. *Geospatial Telemetry*: Folium dynamic tile overlay rendering multi-point environmental sensor feeds.
+  2. *7-Day ML Forecasting*: Scikit-learn regression models projecting atmospheric quality trends.
+  3. *Scenario Simulation*: Interactive sandbox allowing users to modify variables (industrial output, traffic density) to visualize hypothetical impacts.
+- **Tech Stack**: Python, Streamlit, Folium, Plotly, Pandas, Scikit-learn.
+- **Canonical Case Study**: [https://muzzyy.me/projects/virtual-pollution-grid/](https://muzzyy.me/projects/virtual-pollution-grid/)
+- **Repository**: [https://github.com/Not-muzzyy/virtual-pollution-intelligence-grid](https://github.com/Not-muzzyy/virtual-pollution-intelligence-grid)
+
+### 3.5 SafePush (Developer Security Infrastructure)
+- **Overview**: Pre-commit hook and CI/CD security gate that orchestrates static analysis tools to prevent vulnerabilities from entering production.
+- **Key Modules**:
+  - SAST: Semgrep integration for code vulnerability patterns.
+  - Secrets: Gitleaks integration for credentials, API tokens, and private keys.
+  - Container Security: Trivy integration for filesystem and Dockerfile image scans.
+- **Repository**: [https://github.com/Not-muzzyy/safepush](https://github.com/Not-muzzyy/safepush)
 
 ---
 
-## 3. Frequently Asked Questions
+## 4. Frequently Asked Questions (Structured for AI Engines)
 
 **Q: Who is Mohammed Muzammil C?**
-A: Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer from Ballari, Karnataka, India. A BCA graduate from NIMS Ballari, he specializes in building SOC threat monitoring tools, SIEM systems, and RAG architectures.
+A: Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer from Ballari, Karnataka, India. A BCA graduate from NIMS Ballari, he specializes in building SOC threat monitoring tools, SIEM systems, and production RAG architectures.
+
+**Q: What certifications does Mohammed Muzammil C hold?**
+A: He holds the Google Cloud Cybersecurity Professional Certificate (2024), the Hugging Face AI Agents Fundamentals Certification (2025), and completed Anthropic's Claude AI Fluency, Claude 101, and Claude Code curricula (2025). He is currently preparing for CEH and CompTIA Security+.
+
+**Q: What is Mohammed Muzammil C's experience with SIEM tools and SOC analysis?**
+A: Muzammil builds and configures SIEM architectures, log ingestion pipelines, and alert triage workflows. He created Mini-SIEM AI, an automated threat monitoring platform combining ML attack classification, SHAP feature explainability, and automated Groq LLaMA incident reports.
+
+**Q: What machine learning and AI technologies does Mohammed Muzammil C use?**
+A: He builds with LangChain, FAISS, Scikit-learn, SHAP, Pandas, Sentence Transformers, Groq API (LLaMA 3.1/3.3), Anthropic Claude, and OpenAI GPT-4o, specializing in RAG architectures, feature engineering, and explainable AI.
 
 **Q: How does EduSathi work?**
-A: EduSathi is an AI study assistant utilizing a 4-stage RAG pipeline: PDF ingestion, recursive text chunking, FAISS vector indexing, and Groq LLaMA inference with dual-portal RBAC.
+A: EduSathi operates on a 4-stage RAG pipeline: document ingestion from university PDFs, recursive text chunking, FAISS vector indexing with `all-MiniLM-L6-v2`, and sub-second Groq LLaMA synthesis with dual-portal role-based access control.
 
-**Q: How does Mini-SIEM AI detect attacks?**
-A: Mini-SIEM AI ingests real-time logs, uses machine learning classification to flag attack types, provides SHAP explainability for alert transparency, and generates Groq narrative incident reports.
+**Q: What is the accuracy of the Phishing URL Detector?**
+A: The Phishing Detector reports 97% accuracy, 96% precision, 97% recall, and 97% F1-score on its evaluated test dataset across English, Hindi, and Hinglish URLs using 20+ extracted features.
 
-**Q: What is the accuracy of the Phishing Detector?**
-A: The Phishing Detector reports 97% accuracy, 96% precision, 97% recall, and 97% F1 on the project's evaluated dataset.
+**Q: What is SafePush?**
+A: SafePush is a developer security gate CLI that orchestrates Semgrep, Gitleaks, and Trivy in pre-commit and CI/CD pipelines to catch vulnerabilities, secrets, and risky AI-generated code before deployment.
 
 **Q: Is Mohammed Muzammil C available for SOC Analyst roles?**
-A: Yes, Mohammed Muzammil C is actively available for SOC Analyst and Applied AI engineering roles with on-site availability in Bengaluru, Hyderabad, Ballari, and remote globally.
+A: Yes. Mohammed Muzammil C is actively available for SOC Analyst, Threat Intelligence, and Applied AI engineering positions with on-site availability in Bengaluru, Ballari, and Hyderabad, and remote availability globally.
 
 ---
-*Generated for AI Crawlers and Answer Engines. Data synchronized with muzzyy.me portfolio source.*
-
+*Generated for AI Crawlers, Answer Engines (Perplexity, SearchGPT, Claude, Gemini), and Knowledge Graphs. Canonical data source: https://muzzyy.me/*

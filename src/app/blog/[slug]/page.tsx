@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       openGraph: {
         title: post.title,
         description: post.description,
+        url: `https://muzzyy.me/blog/${resolvedParams.slug}/`,
         type: 'article',
         publishedTime: post.date,
         authors: ['Mohammed Muzammil C'],
@@ -53,8 +54,34 @@ export default async function BlogPost({ params }: { params: Params }) {
     notFound();
   }
 
+  const postSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.description,
+    "datePublished": new Date(post.date).toISOString(),
+    "author": {
+      "@type": "Person",
+      "name": "Mohammed Muzammil C",
+      "url": "https://muzzyy.me/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mohammed Muzammil C",
+      "url": "https://muzzyy.me/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://muzzyy.me/blog/${resolvedParams.slug}/`
+    }
+  };
+
   return (
     <main id="main-content">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(postSchema) }}
+      />
       <article className="blog-post-container">
         <div>
           <Link href="/blog/" className="blog-back-link">

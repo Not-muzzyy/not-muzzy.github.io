@@ -4,16 +4,47 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Phishing Detector Case Study | Mohammed Muzammil C',
+  title: 'Phishing Detector - ML Case Study',
   description: '4-layer cybersecurity pipeline achieving 97% accuracy across English, Hindi, and Hinglish threat content.',
   alternates: {
     canonical: '/projects/phishing-detector/',
+  },
+  openGraph: {
+    title: 'Phishing Detector - ML Case Study | Mohammed Muzammil C',
+    description: '4-layer cybersecurity pipeline achieving 97% accuracy across English, Hindi, and Hinglish threat content.',
+    url: 'https://muzzyy.me/projects/phishing-detector/',
+    type: 'article',
+  },
+};
+
+const projectSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://muzzyy.me/projects/phishing-detector/#software",
+  "name": "Phishing Detector",
+  "applicationCategory": "SecurityApplication",
+  "operatingSystem": "Web, Cross-platform",
+  "url": "https://muzzyy.me/projects/phishing-detector/",
+  "description": "Machine learning system for detecting malicious URLs across English, Hindi, and Hinglish with 97% accuracy on test data.",
+  "author": {
+    "@type": "Person",
+    "name": "Mohammed Muzammil C",
+    "url": "https://muzzyy.me/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
   }
 };
 
 export default function PhishingDetectorPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}
+      />
       <main className="min-h-screen flex flex-col pt-24 pb-12">
         <Navbar />
         <section className="flex-grow">
@@ -92,6 +123,48 @@ export default function PhishingDetectorPage() {
                   <div className="btn-glow" aria-hidden="true"></div>
                 </a>
              </div>
+          </div>
+
+          <div className="stat-card" style={{ marginTop: '48px', padding: '32px', overflowX: 'auto' }}>
+            <h3 className="glow-text" style={{ fontSize: '1.25rem', marginBottom: '16px' }}>
+              Evaluated Benchmark Performance &bull; Multi-Vector Analysis
+            </h3>
+            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.85rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid var(--border)', color: 'var(--text)' }}>
+                  <th style={{ padding: '12px 16px' }}>Metric</th>
+                  <th style={{ padding: '12px 16px' }}>Score</th>
+                  <th style={{ padding: '12px 16px' }}>Evaluated Benchmark Scope</th>
+                  <th style={{ padding: '12px 16px', color: 'var(--brand-glow)' }}>Operational Defense Significance</th>
+                </tr>
+              </thead>
+              <tbody style={{ color: 'var(--text-dim)' }}>
+                <tr style={{ borderBottom: '1px solid var(--border)' }}>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 500 }}>Accuracy</td>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 600 }}>97%</td>
+                  <td style={{ padding: '12px 16px' }}>Comprehensive multi-source test dataset</td>
+                  <td style={{ padding: '12px 16px' }}>High generalizability across common threat categories</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid var(--border)' }}>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 500 }}>Precision</td>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 600 }}>96%</td>
+                  <td style={{ padding: '12px 16px' }}>Legitimate domain false-positive testing</td>
+                  <td style={{ padding: '12px 16px' }}>Minimizes false-alarm disruption for authorized communications</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid var(--border)' }}>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 500 }}>Recall</td>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 600 }}>97%</td>
+                  <td style={{ padding: '12px 16px' }}>Obfuscated and look-alike domain evasion</td>
+                  <td style={{ padding: '12px 16px' }}>Crucial for zero-day credential harvesting attempts</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 500 }}>F1-Score</td>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 600 }}>97%</td>
+                  <td style={{ padding: '12px 16px' }}>Multilingual English, Hindi, Hinglish threats</td>
+                  <td style={{ padding: '12px 16px' }}>Harmonized balance between sensitivity and specificity</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
         <Footer />

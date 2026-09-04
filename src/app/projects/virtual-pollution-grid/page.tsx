@@ -4,16 +4,47 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Virtual Pollution Intel Grid Case Study | Mohammed Muzammil C',
+  title: 'Pollution Intel Grid - Case Study',
   description: 'Interactive geospatial monitoring dashboard with 7-day AI risk forecasting and scenario simulations.',
   alternates: {
     canonical: '/projects/virtual-pollution-grid/',
+  },
+  openGraph: {
+    title: 'Pollution Intel Grid - Case Study | Mohammed Muzammil C',
+    description: 'Interactive geospatial monitoring dashboard with 7-day AI risk forecasting and scenario simulations.',
+    url: 'https://muzzyy.me/projects/virtual-pollution-grid/',
+    type: 'article',
+  },
+};
+
+const projectSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://muzzyy.me/projects/virtual-pollution-grid/#software",
+  "name": "Virtual Pollution Intelligence Grid",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Web, Cross-platform",
+  "url": "https://muzzyy.me/projects/virtual-pollution-grid/",
+  "description": "Interactive geospatial monitoring dashboard with 7-day AI risk forecasting and scenario simulations.",
+  "author": {
+    "@type": "Person",
+    "name": "Mohammed Muzammil C",
+    "url": "https://muzzyy.me/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
   }
 };
 
 export default function PollutionGridPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}
+      />
       <main className="min-h-screen flex flex-col pt-24 pb-12">
         <Navbar />
         <section className="flex-grow">

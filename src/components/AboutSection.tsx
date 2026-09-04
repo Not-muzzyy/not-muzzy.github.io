@@ -73,9 +73,21 @@ export default function AboutSection() {
                 continuously push my boundaries through hackathons, emerging
                 technologies, and products that solve meaningful problems.
               </p>
-              <p className="stagger-item">
-                I&apos;m Mohammed Muzammil C, a BCA graduate based in Ballari, Karnataka, India. I specialize in building intelligence-driven security systems, SOC monitoring utilities, and robust AI platforms using cutting-edge RAG pipelines.
-              </p>
+              <div className="stagger-item mt-6 p-4 rounded-lg bg-white/[0.03] border border-white/[0.08]" style={{ fontSize: '0.85rem' }}>
+                <div style={{ fontWeight: 600, color: 'var(--text)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em', fontSize: '0.75rem' }}>
+                  At A Glance &bull; Quick Facts
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '6px 16px', color: 'var(--text-dim)' }}>
+                  <span style={{ color: 'var(--text)' }}><strong>Target Roles:</strong></span>
+                  <span>Cybersecurity Engineer, SOC Analyst, Applied AI Developer</span>
+                  <span style={{ color: 'var(--text)' }}><strong>Specialization:</strong></span>
+                  <span>SOC Threat Monitoring, SIEM Systems, RAG Architectures</span>
+                  <span style={{ color: 'var(--text)' }}><strong>Locations:</strong></span>
+                  <span>Ballari (Local), Bengaluru, Hyderabad &amp; Global Remote</span>
+                  <span style={{ color: 'var(--text)' }}><strong>Education:</strong></span>
+                  <span>BCA, Nandi Institute of Management &amp; Science (NIMS Ballari)</span>
+                </div>
+              </div>
             </div>
 
             <div className="pt-4 flex flex-wrap gap-4">

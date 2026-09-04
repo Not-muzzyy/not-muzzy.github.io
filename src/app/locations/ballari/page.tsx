@@ -4,11 +4,17 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'SOC Analyst & Cybersecurity Engineer in Ballari | Mohammed Muzammil C',
+  title: 'SOC Analyst & Cyber Engineer in Ballari',
   description: 'Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer located in Ballari, Karnataka. Available for local and remote SOC Analyst roles.',
   alternates: {
     canonical: '/locations/ballari/',
-  }
+  },
+  openGraph: {
+    title: 'SOC Analyst & Cyber Engineer in Ballari | Mohammed Muzammil C',
+    description: 'Mohammed Muzammil C is a Cybersecurity Engineer and AI Systems Developer located in Ballari, Karnataka. Available for local and remote SOC Analyst roles.',
+    url: 'https://muzzyy.me/locations/ballari/',
+    type: 'website',
+  },
 };
 
 export default function BallariLocationPage() {
@@ -16,14 +22,22 @@ export default function BallariLocationPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Mohammed Muzammil C - Cybersecurity Services",
-    "image": "https://muzzyy.me/favicon.ico",
+    "image": "https://muzzyy.me/icon.png",
     "description": "Cybersecurity Engineer, SOC Analyst, and AI Systems Developer based in Ballari.",
+    "priceRange": "$$",
+    "email": "mailto:mohammedmuzammil643@gmail.com",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Ballari Cantonment",
       "addressLocality": "Ballari",
       "addressRegion": "Karnataka",
       "postalCode": "583101",
       "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 15.1394,
+      "longitude": 76.9214
     },
     "areaServed": {
       "@type": "City",

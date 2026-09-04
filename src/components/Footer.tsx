@@ -22,19 +22,38 @@ export default function Footer() {
             <Link href="/#about" style={{ textDecoration: 'none' }}>About</Link> 
             <Link href="/#skills" style={{ textDecoration: 'none' }}>Skills</Link> 
             <Link href="/#projects" style={{ textDecoration: 'none' }}>Projects</Link> 
+            <Link href="/blog/" style={{ textDecoration: 'none' }}>Blog</Link> 
             <Link href="/faq/" style={{ textDecoration: 'none' }}>FAQ</Link> 
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Resume</a> 
           </nav> 
+
+          <nav aria-label="Project Case Studies" className="footer-links" style={{ display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'flex-start' }}> 
+            <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text)', fontWeight: 600, marginBottom: '4px' }}>Case Studies</span>
+            <Link href="/projects/edusaathi/" style={{ textDecoration: 'none' }}>EduSathi RAG</Link> 
+            <Link href="/projects/mini-siem-ai/" style={{ textDecoration: 'none' }}>Mini-SIEM AI</Link> 
+            <Link href="/projects/phishing-detector/" style={{ textDecoration: 'none' }}>Phishing Detector</Link> 
+            <Link href="/projects/virtual-pollution-grid/" style={{ textDecoration: 'none' }}>Pollution Grid</Link> 
+          </nav> 
           
-          <nav aria-label="Service Areas" className="footer-links" style={{ display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'flex-start' }}> 
+          <nav aria-label="Service Areas & Legal" className="footer-links" style={{ display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'flex-start' }}> 
             <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text)', fontWeight: 600, marginBottom: '4px' }}>Service Areas</span>
             <Link href="/locations/ballari/" style={{ textDecoration: 'none' }}>Ballari (Local)</Link> 
             <Link href="/locations/bangalore/" style={{ textDecoration: 'none' }}>Bengaluru</Link> 
             <Link href="/locations/hospet/" style={{ textDecoration: 'none' }}>Hospet</Link> 
+            <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text)', fontWeight: 600, marginTop: '8px', marginBottom: '4px' }}>Legal</span>
+            <Link href="/privacy-policy/" style={{ textDecoration: 'none' }}>Privacy Policy</Link> 
+            <Link href="/terms/" style={{ textDecoration: 'none' }}>Terms of Service</Link> 
           </nav> 
         </div>
         
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'flex-end', borderTop: '1px solid var(--border)', paddingTop: '24px' }}>
+        <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid var(--border)', paddingTop: '24px', flexWrap: 'wrap', gap: '12px' }}>
+          <div style={{ display: 'flex', gap: '16px', fontSize: '0.8rem', color: 'var(--text-dim)' }}>
+            <Link href="/privacy-policy/" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Privacy</Link>
+            <span>&bull;</span>
+            <Link href="/terms/" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Terms</Link>
+            <span>&bull;</span>
+            <Link href="/sitemap.xml" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Sitemap</Link>
+          </div>
           <Link href="/" style={{ color: 'var(--brand-glow)', textDecoration: 'none', fontSize: '0.85rem' }}>Back to Home &uarr;</Link>
         </div>
       </div> 

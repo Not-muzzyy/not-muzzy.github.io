@@ -4,16 +4,47 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'EduSathi AI - Case Study | Mohammed Muzammil C',
+  title: 'EduSathi AI - RAG Case Study',
   description: 'Production-grade AI study companion using RAG, FAISS, and LangChain for Indian university curriculum.',
   alternates: {
     canonical: '/projects/edusaathi/',
+  },
+  openGraph: {
+    title: 'EduSathi AI - RAG Case Study | Mohammed Muzammil C',
+    description: 'Production-grade AI study companion using RAG, FAISS, and LangChain for Indian university curriculum.',
+    url: 'https://muzzyy.me/projects/edusaathi/',
+    type: 'article',
+  },
+};
+
+const projectSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://muzzyy.me/projects/edusaathi/#software",
+  "name": "EduSathi",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web, Cross-platform",
+  "url": "https://muzzyy.me/projects/edusaathi/",
+  "description": "Production-grade AI study companion utilizing RAG, FAISS, LangChain, and Groq API with dual-portal RBAC for university curricula.",
+  "author": {
+    "@type": "Person",
+    "name": "Mohammed Muzammil C",
+    "url": "https://muzzyy.me/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
   }
 };
 
 export default function EduSathiPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}
+      />
       <main className="min-h-screen flex flex-col pt-24 pb-12">
         <Navbar />
         <section className="flex-grow">
@@ -63,7 +94,49 @@ export default function EduSathiPage() {
                   <span className="link-arrow">→</span>
                   <div className="btn-glow" aria-hidden="true"></div>
                 </a>
-             </div>
+              </div>
+          </div>
+
+          <div className="stat-card" style={{ marginTop: '48px', padding: '32px', overflowX: 'auto' }}>
+            <h3 className="glow-text" style={{ fontSize: '1.25rem', marginBottom: '16px' }}>
+              Architecture Benchmark &bull; Comparative Analysis
+            </h3>
+            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.85rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid var(--border)', color: 'var(--text)' }}>
+                  <th style={{ padding: '12px 16px' }}>Capability</th>
+                  <th style={{ padding: '12px 16px' }}>Traditional Search</th>
+                  <th style={{ padding: '12px 16px' }}>Generic LLM</th>
+                  <th style={{ padding: '12px 16px', color: 'var(--brand-glow)' }}>EduSathi RAG Pipeline</th>
+                </tr>
+              </thead>
+              <tbody style={{ color: 'var(--text-dim)' }}>
+                <tr style={{ borderBottom: '1px solid var(--border)' }}>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 500 }}>Context Grounding</td>
+                  <td style={{ padding: '12px 16px' }}>Keyword matches only</td>
+                  <td style={{ padding: '12px 16px' }}>High hallucination risk</td>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)' }}>Strictly grounded in syllabus PDFs</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid var(--border)' }}>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 500 }}>Vector Search</td>
+                  <td style={{ padding: '12px 16px' }}>None</td>
+                  <td style={{ padding: '12px 16px' }}>Static training weights</td>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)' }}>FAISS dense semantic indexing</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid var(--border)' }}>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 500 }}>Inference Speed</td>
+                  <td style={{ padding: '12px 16px' }}>Instant (no synthesis)</td>
+                  <td style={{ padding: '12px 16px' }}>2–5s (Standard APIs)</td>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)' }}>Sub-second Groq LLaMA 3.1</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)', fontWeight: 500 }}>Governance</td>
+                  <td style={{ padding: '12px 16px' }}>None</td>
+                  <td style={{ padding: '12px 16px' }}>Unrestricted</td>
+                  <td style={{ padding: '12px 16px', color: 'var(--text)' }}>Dual-portal RBAC (Student/Faculty)</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
         <Footer />

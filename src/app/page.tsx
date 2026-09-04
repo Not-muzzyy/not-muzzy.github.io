@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  openGraph: {
+    title: 'Mohammed Muzammil C | Cybersecurity & AI Engineer',
+    description: 'Cybersecurity Engineer & AI Developer based in Ballari. Specializing in SOC analysis, SIEM systems, and RAG architectures.',
+    url: 'https://muzzyy.me/',
+    type: 'website',
+  },
 };
 
 function Divider() {

@@ -43,7 +43,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="/blog" style={{ '--nav-hue': '160' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
+          <Link href="/blog/" style={{ '--nav-hue': '160' } as React.CSSProperties} onClick={() => setIsOpen(false)}>
             Blog
           </Link>
         </li>

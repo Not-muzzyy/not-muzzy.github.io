@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   title: 'Blog | Field Notes on Security & AI',
   description: 'Technical deep-dives into SOC architectures, RAG pipelines, and cybersecurity engineering by Mohammed Muzammil C.',
   alternates: {
-    canonical: 'https://muzzyy.me/blog',
+    canonical: '/blog/',
+  },
+  openGraph: {
+    title: 'Blog | Field Notes on Security & AI | Mohammed Muzammil C',
+    description: 'Technical deep-dives into SOC architectures, RAG pipelines, and cybersecurity engineering by Mohammed Muzammil C.',
+    url: 'https://muzzyy.me/blog/',
+    type: 'website',
   },
 };
 
