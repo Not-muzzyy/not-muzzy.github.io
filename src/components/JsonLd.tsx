@@ -54,23 +54,6 @@ export default function JsonLd() {
             "credentialCategory": "Certification"
           }
         ],
-        "creator": [
-          {
-            "@type": "SoftwareApplication",
-            "name": "EduSathi",
-            "url": "https://muzzyy.me/projects/edusaathi/"
-          },
-          {
-            "@type": "SoftwareApplication",
-            "name": "Mini-SIEM AI",
-            "url": "https://muzzyy.me/projects/mini-siem-ai/"
-          },
-          {
-            "@type": "SoftwareApplication",
-            "name": "Phishing Detector Advanced",
-            "url": "https://muzzyy.me/projects/phishing-detector/"
-          }
-        ],
         "address": { 
           "@type": "PostalAddress", 
           "streetAddress": "Ballari Cantonment", 
